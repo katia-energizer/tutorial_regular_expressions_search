@@ -1,9 +1,10 @@
+---
 type: tutorial
 layout: tutorial
 title:  "Searching with Regular Expressions"
 description: "This tutorial demonstrates how to use regular expressions for searching in a text. "
-authors: Kate Volodko
-date: 2020-07-07
+authors: Andrey Vityuk
+date: 2021-02-02
 showAuthorInfo: false
 ---
 
@@ -11,7 +12,7 @@ This tutorial demonstrates how to write patterns with regular expressions and us
 
 To get started, you need to create an application [using Intellij IDEA](https://kotlinlang.org/docs/tutorials/jvm-get-started.html) or another IDE with the Kotlin Programming Language support. 
 
-##Create a regular expression
+## Create a regular expression
 
 There may be times when you need to use [regular expressions](https://www.regular-expressions.info/quickstart.html). 
 
