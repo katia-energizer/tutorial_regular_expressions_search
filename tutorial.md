@@ -217,7 +217,7 @@ Define if the pattern matches the entire text.
    * `text` is a variable for the text where we are searching for matches.
 
 3. Use the `println` function to display the result of the `result4` variable. Use the `range` function to get a range of indexes in the text string. 
-4. If the pattern does not contain matches in the text, the `matchEntire` function returns null. To allow the `range` function to return null, add the question mark `?` after the `result4` variable name. For information about the danger of null references, refer to [Null Safety](https://kotlinlang.org/docs/reference/null-safety.html).
+4. If the pattern does not have matches in the text, the `matchEntire` function returns null. To allow the `range` function to return null, add the question mark `?` after the `result4` variable name. For information about the danger of null references, refer to [Null Safety](https://kotlinlang.org/docs/reference/null-safety.html).
 
    <div class="sample" markdown="1" theme="idea">
 
