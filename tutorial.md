@@ -12,14 +12,12 @@ To get started, you need to create an application [using Intellij IDEA](https://
 
 ## Create a regular expression
 
-There may be times when you need to use [regular expressions](https://www.regular-expressions.info/quickstart.html). 
-
-Regular expression or regex is a sequence of characters that forms a pattern. This pattern can help you to search certain data in a text. 
+There may be times when you need to use [regular expressions](https://www.regular-expressions.info/quickstart.html). Regular expression or regex is a sequence of characters that forms a pattern. This pattern can help you to search certain data in a text. 
 
 The most basic regular expression consists of a single literal character or a sequence of literal characters. 
 
-* `a` matches the first occurrence of the "a" character in your text.
-* `apple` matches the first occurrence of the "apple" characters in your text.
+* `a` matches the first occurrence of the **a** character in your text.
+* `apple` matches the first occurrence of the **apple** characters in your text.
 
 More complex regular expressions include special characters. 
 * `\s` matches the first occurrence of the white space character in your text.
@@ -96,7 +94,7 @@ where:
 val result1 = pattern.containsMatchIn(text)
 println(result1)
 ```
-4. To run your application, click the green `Run` icon in the gutter and select `Run 'MainKt'`.
+4. To run your application, click the green **Run** icon in the gutter and select **Run 'MainKt'**.
 
 The pattern has matches in the text, so the `containsMatchIn` function returns the `true` value.
 
@@ -125,7 +123,7 @@ where:
 val result2 = pattern.find(text)
 println(result2?.range) 
 ```
-5. To run your application, click the green `Run` icon in the gutter and select `Run 'MainKt'`.
+5. To run your application, click the green **Run** icon in the gutter and select **Run 'MainKt'**.
 
 The pattern is available in the text, so the `find` function returns the `40..45` range of indexes.
 
@@ -190,7 +188,7 @@ val result4 = pattern.matchEntire(text)
 println(result4?.range)
 ```
 
-5. To run your application, click the green `Run` icon in the gutter and select `Run 'MainKt'`.
+5. To run your application, click the green **Run** icon in the gutter and select **Run 'MainKt'**.
 
 The pattern does not match the text, so the function returns null.
 
@@ -217,7 +215,7 @@ where:
 val result5 = pattern.matches(text)
 println(result5)
 ```
-4. To run your application, click the green `Run` icon in the gutter and select `Run 'MainKt'`.
+4. To run your application, click the green **Run** icon in the gutter and select **Run 'MainKt'**.
 
 The pattern does not match the text, so the function returns the `false` value.
 
@@ -243,7 +241,7 @@ val pattern = Regex("Actual")
 val pattern = Regex("Actual", RegexOption.IGNORE_CASE)
 ```
 
-5. Click the green `Run` icon in the gutter and select `Run 'MainKt'` to re-run your application. Results for `actual` and `Actual` patterns are the same now.
+5. Click the green **Run** icon in the gutter and select **Run 'MainKt'** to re-run your application. Results for `actual` and `Actual` patterns are the same now.
 
 ## What's next?
 
