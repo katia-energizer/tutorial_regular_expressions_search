@@ -114,8 +114,8 @@ Find the first match of the pattern in the text.
 pattern.find(text)
 ```
 where:
-* `pattern` is a variable for the search pattern.
-* `find` is a search function.
+   * `pattern` is a variable for the search pattern.
+   * `find` is a search function.
    * `text` is a variable for the text where we are searching for matches.
 
 3. Use the `println` function to display the result of the `result2` variable. Use the `range` function to get a range of indexes in the text string. 
