@@ -192,7 +192,7 @@ Find all pattern matches in the text.
    
    </div>
 
-4. To run your application, click the green `Run` icon in the gutter and select `Run 'MainKt'`.
+4. To run your application, click the green **Run** icon in the gutter and select **Run 'MainKt'**.
 
 The pattern has two matches in the text: `actual` and `actual` in `actually`, so the `findAll` function returns 2 values: `40..45` and `48..53`.
 
@@ -283,7 +283,7 @@ Add option to a regular expression.
    
    </div>
 
-2. Click the green `Run` icon in the gutter and select `Run 'MainKt'` to re-run your application.
+2. Click the green **Run** icon in the gutter and select **Run 'MainKt'** to re-run your application.
 3. Check results. They have changed. For example, the `find` function result is `false` now. In Kotlin, `Actual` does not equal `actual`, so there are no matches in the text. 
 4. Add the `IGNORE_CASE` option to the pattern variable to enable case-insensitive matching:
 
