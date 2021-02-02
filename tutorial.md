@@ -143,7 +143,7 @@ Find the first match of the pattern in the text.
    * `text` is a variable for the text where we are searching for matches.
 
 3. Use the `println` function to display the result of the `result2` variable. Use the `range` function to get a range of indexes in the text string. 
-4. If the pattern does not have matches in the text, the `find` function returns null. To allow the `range` function to return null, add a question mark `?` after the `result2` variable name. For information about the danger of null references, refer to [Null Safety](https://kotlinlang.org/docs/reference/null-safety.html).
+4. If the pattern does not have matches in the text, the `find` function returns `null`. To allow the `range` function to return `null`, add a question mark `?` after the `result2` variable name. For information about the danger of null references, refer to [Null Safety](https://kotlinlang.org/docs/reference/null-safety.html).
 
    <div class="sample" markdown="1" theme="idea">
 
@@ -217,7 +217,7 @@ Define if the pattern matches the entire text.
    * `text` is a variable for the text where we are searching for matches.
 
 3. Use the `println` function to display the result of the `result4` variable. Use the `range` function to get a range of indexes in the text string. 
-4. If the pattern does not have matches in the text, the `matchEntire` function returns null. To allow the `range` function to return null, add the question mark `?` after the `result4` variable name. For information about the danger of null references, refer to [Null Safety](https://kotlinlang.org/docs/reference/null-safety.html).
+4. If the pattern does not have matches in the text, the `matchEntire` function returns `null`. To allow the `range` function to return `null`, add the question mark `?` after the `result4` variable name. For information about the danger of null references, refer to [Null Safety](https://kotlinlang.org/docs/reference/null-safety.html).
 
    <div class="sample" markdown="1" theme="idea">
 
@@ -230,7 +230,7 @@ Define if the pattern matches the entire text.
 
 5. To run your application, click the green **Run** icon in the gutter and select **Run 'MainKt'**.
 
-The pattern does not match the text, so the function returns null.
+The pattern does not match the text, so the function returns `null`.
 
 ### matches
 
