@@ -97,9 +97,9 @@ Define if the pattern has a match in the text.
 1. Introduce a local variable `result1` with the keyword `val`. 
 2. Assign the following value to the `result1` variable:
 
-```
-pattern.containsMatchIn(text)
-```
+   ```
+   pattern.containsMatchIn(text)
+   ```
 
 where:
 * `pattern` is a variable for the search pattern.
@@ -131,9 +131,9 @@ Find the first match of the pattern in the text.
 1. Introduce a local variable `result2` with the keyword `val`. 
 2. Assign the following value to the `result2` variable: 
  
-```
-pattern.find(text)
-```
+   ```
+   pattern.find(text)
+   ```
 
 where:
 * `pattern` is a variable for the search pattern.
@@ -167,9 +167,9 @@ Find all pattern matches in the text.
 1. Introduce a local variable `result3` with the keyword `val`. 
 2. Assign the following value to the `result3` variable:
 
-```
-pattern.findAll(text)
-```
+   ```
+   pattern.findAll(text)
+   ```
 
 where:
 * `pattern` is a variable for search pattern.
@@ -203,15 +203,11 @@ The `matchEntire` function attempts to match the regular expression against the 
 Define if the pattern matches the entire text.
 
 1. Introduce a local variable `result4` with the keyword `val`. 
-2. Assign the following value to the `result4` variable: 
+2. Assign the following value to the `result4` variable:
 
-   <div class="sample" markdown="1" theme="idea">
-
-   ```kotlin
-   val result4 = pattern.matchEntire(text)
    ```
-   
-   </div>
+   pattern.matchEntire(text)
+   ```
 
 where:
 * `pattern` is a variable for search pattern.
@@ -243,9 +239,9 @@ Define if the pattern has a match in the text.
 1. Introduce a local variable `result5` with the keyword `val`. 
 2. Assign the following value to the `result5` variable:
 
-```
-pattern.matches(text)
-```
+   ```
+   pattern.matches(text)
+   ```
 
 where:
 * `pattern` is a variable for the search pattern.
