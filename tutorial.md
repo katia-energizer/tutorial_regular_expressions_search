@@ -158,7 +158,7 @@ Find the first match of the pattern in the text.
 
 The pattern is available in the text, so the `find` function returns the `40..45` range of indexes.
 
-For information about these function parameters and exceptions, refer to [the find function reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex/find.html). 
+For information about function parameters and exceptions, refer to [the find function reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex/find.html). 
 
 ### findAll
 
