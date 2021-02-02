@@ -85,7 +85,7 @@ The presence of the `Regex` type allows the compiler to use the following functi
 * [matchEntire](#matchEntire)
 * [matches](#matches)
 
-The `Regex` type also allows to use special [options](#user-content-add-an-option-to-a-regular-expression) with the regular expressions.
+The `Regex` type also allows to use special [options](#user-content-add-an-option-to-a-regular-expression) with regular expressions.
 
 Note that the list above is not the full list of functions that are provided by the `Regex` type. For the full list, refer to [the Regex type reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex/#kotlin.text.Regex).
 
