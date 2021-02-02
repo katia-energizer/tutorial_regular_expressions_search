@@ -40,7 +40,7 @@ You can combine literal and special characters to create complex patterns. For t
    
    </div>
 
-We will use a short list of words and numbers as mock data. You can also use the text of your choice. In this case, you will need to configure a search pattern that will be relevant for your text, but you still can refer to the functions and options described in this tutorial.
+In this tutorial, we will use a short list of words and numbers as mock data. You can also use the text of your choice. In this case, you will need to configure a search pattern that will be relevant for your text, but you still can refer to the described functions and options.
 
 ### Define the the pattern to search with.
 
