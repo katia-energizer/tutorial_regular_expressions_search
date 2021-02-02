@@ -271,7 +271,7 @@ You can use special options with the regular expression.
 
 In this tutorial, we will cover the `IGNORE_CASE` option. For information about other options, refer to [the RegexOption type reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex-option/).
 
-Add option to a regular expression.
+Modufy the regular expression and add an option to it.
 
 1. Modify the value of the `pattern` variable from `actual` to `Actual`.
 
