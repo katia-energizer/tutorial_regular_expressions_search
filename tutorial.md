@@ -35,6 +35,7 @@ You can compine literal and special characters to can create complex patterns. F
    ```kotlin
    val text = "Actomyosin, actor, 123.5, actress, 505, actual, actually, actuary"
    ```
+   
    </div>
 
 We will use a short list of words and numbers as mock data. You can also use the text of your choice. In this case, you will need to configure a search pattern that will be relevant for your text, but you still can refer to the functions and options described in this tutorial.
@@ -44,20 +45,33 @@ We will use a short list of words and numbers as mock data. You can also use the
 1. Introduce a local variable `pattern` with the keyword `val`. 
 2. Assign the `actual` value to this variable.
 
-```
-val pattern = "actual"
-```
+   <div class="sample" markdown="1" theme="idea">
+
+   ```kotlin
+   val pattern = "actual"
+   ```
+   
+   </div>
+
 3. Now, your pattern is just a text string. To make it into a regular expression, assign the `Regex` type to the value.
 
-```
-val pattern = Regex("actual")
-```
+   <div class="sample" markdown="1" theme="idea">
+
+   ```kotlin
+   val pattern = Regex("actual")
+   ```
+   
+   </div>
 
 In this example, we added the `Regex` type to the value. Alternatively, you can use the `toRegex` function.
 
-```
-val pattern = "actual".toRegex()
-```
+   <div class="sample" markdown="1" theme="idea">
+
+   ```kotlin
+   val pattern = "actual".toRegex()
+   ```
+   
+   </div>
 
 ## Search with a regular expression
 
@@ -86,6 +100,7 @@ Define if the pattern has a match in the text.
 ```
 pattern.containsMatchIn(text)
 ```
+
 where:
 * `pattern` is a variable for the search pattern.
 * `containsMatchIn` is a search function.
@@ -93,10 +108,15 @@ where:
 
 3. Use the `println` function to display the result of the `result1` variable.
 
-```
-val result1 = pattern.containsMatchIn(text)
-println(result1)
-```
+   <div class="sample" markdown="1" theme="idea">
+
+   ```kotlin
+   val result1 = pattern.containsMatchIn(text)
+   println(result1)
+   ```
+   
+   </div>
+   
 4. To run your application, click the green **Run** icon in the gutter and select **Run 'MainKt'**.
 
 The pattern has matches in the text, so the `containsMatchIn` function returns the `true` value.
@@ -114,6 +134,7 @@ Find the first match of the pattern in the text.
 ```
 pattern.find(text)
 ```
+
 where:
 * `pattern` is a variable for the search pattern.
 * `find` is a search function.
@@ -122,10 +143,15 @@ where:
 3. Use the `println` function to display the result of the `result2` variable. Use the `range` function to get a range of indexes in the text string. 
 4. If the pattern does not contain matches in the text, the `find` function returns null. To allow the `range` function to return null, add a question mark `?` after the `result2` variable name. For information about the danger of null references, refer to [Null Safety](https://kotlinlang.org/docs/reference/null-safety.html).
 
-```
-val result2 = pattern.find(text)
-println(result2?.range) 
-```
+   <div class="sample" markdown="1" theme="idea">
+
+   ```kotlin
+   val result2 = pattern.find(text)
+   println(result2?.range) 
+   ```
+   
+   </div>
+   
 5. To run your application, click the green **Run** icon in the gutter and select **Run 'MainKt'**.
 
 The pattern is available in the text, so the `find` function returns the `40..45` range of indexes.
@@ -144,6 +170,7 @@ Find all pattern matches in the text.
 ```
 pattern.findAll(text)
 ```
+
 where:
 * `pattern` is a variable for search pattern.
 * `findAll` is a search function.
@@ -151,13 +178,17 @@ where:
 
 3. The result of the `findAll` function is a sequence of values. Use the `forEach` function to display the result as a column of values. For information about this function, refer to [the forEach function reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/for-each.html).
 
-```
-val result3 = pattern.findAll(text)
-result3.forEach { match ->
-   val indexes = match.range
-   println("$indexes")
-}
-```
+   <div class="sample" markdown="1" theme="idea">
+
+   ```kotlin
+   val result3 = pattern.findAll(text)
+   result3.forEach { match ->
+      val indexes = match.range
+      println("$indexes")
+   }
+   ```
+   
+   </div>
 
 4. To run your application, click the green `Run` icon in the gutter and select `Run 'MainKt'`.
 
@@ -174,9 +205,13 @@ Define if the pattern matches the entire text.
 1. Introduce a local variable `result4` with the keyword `val`. 
 2. Assign the following value to the `result4` variable: 
 
-```
-val result4 = pattern.matchEntire(text)
-```
+   <div class="sample" markdown="1" theme="idea">
+
+   ```kotlin
+   val result4 = pattern.matchEntire(text)
+   ```
+   
+   </div>
 
 where:
 * `pattern` is a variable for search pattern.
@@ -186,10 +221,14 @@ where:
 3. Use the `println` function to display the result of the `result4` variable. Use the `range` function to get a range of indexes in the text string. 
 4. If the pattern does not contain matches in the text, the `matchEntire` function returns null. To allow the `range` function to return null, add the question mark `?` after the `result4` variable name. For information about the danger of null references, refer to [Null Safety](https://kotlinlang.org/docs/reference/null-safety.html).
 
-```
-val result4 = pattern.matchEntire(text)
-println(result4?.range)
-```
+   <div class="sample" markdown="1" theme="idea">
+
+   ```kotlin
+   val result4 = pattern.matchEntire(text)
+   println(result4?.range)
+   ```
+   
+   </div>
 
 5. To run your application, click the green **Run** icon in the gutter and select **Run 'MainKt'**.
 
@@ -207,6 +246,7 @@ Define if the pattern has a match in the text.
 ```
 pattern.matches(text)
 ```
+
 where:
 * `pattern` is a variable for the search pattern.
 * `matches` is a search function.
@@ -214,10 +254,15 @@ where:
 
 3. Use the `println` function to display the result of the `result5` variable.
 
-```
-val result5 = pattern.matches(text)
-println(result5)
-```
+   <div class="sample" markdown="1" theme="idea">
+
+   ```kotlin
+    val result5 = pattern.matches(text)
+    println(result5)
+    ```
+    
+    </div>
+    
 4. To run your application, click the green **Run** icon in the gutter and select **Run 'MainKt'**.
 
 The pattern does not match the text, so the function returns the `false` value.
@@ -232,17 +277,25 @@ Add option to a regular expression.
 
 1. Modify the value of the `pattern` variable from `actual` to `Actual`.
 
-```
-val pattern = Regex("Actual")
-```
+   <div class="sample" markdown="1" theme="idea">
+
+   ```kotlin
+   val pattern = Regex("Actual")
+   ```
+   
+   </div>
 
 2. Click the green `Run` icon in the gutter and select `Run 'MainKt'` to re-run your application.
 3. Check results. They have changed. For example, the `find` function result is `false` now. In Kotlin, `Actual` does not equal `actual`, so there are no matches in the text. 
 4. Add the `IGNORE_CASE` option to the pattern variable to enable case-insensitive matching:
 
-```
-val pattern = Regex("Actual", RegexOption.IGNORE_CASE)
-```
+   <div class="sample" markdown="1" theme="idea">
+
+   ```kotlin
+   val pattern = Regex("Actual", RegexOption.IGNORE_CASE)
+   ```
+   
+   </div>
 
 5. Click the green **Run** icon in the gutter and select **Run 'MainKt'** to re-run your application. Results for `actual` and `Actual` patterns are the same now.
 
