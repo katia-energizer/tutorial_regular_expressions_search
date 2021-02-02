@@ -65,7 +65,7 @@ In this tutorial, we will use a short list of words and numbers as mock data. Yo
    
    </div>
 
-   In this example, we added the `Regex` type to the value. Alternatively, you can use the `toRegex` function.
+In this example, we added the `Regex` type to the value. Alternatively, you can use the `toRegex` function.
 
    <div class="sample" markdown="1" theme="idea">
 
