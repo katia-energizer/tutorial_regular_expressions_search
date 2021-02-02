@@ -12,7 +12,8 @@ To get started, you need to create an application [using Intellij IDEA](https://
 
 ## Create a regular expression
 
-There may be times when you need to use [regular expressions](https://www.regular-expressions.info/quickstart.html). 
+There may be times when you need to use [regular expressions](https://www.regular-expressions.info/quickstart.html).
+
 Regular expression or regex is a sequence of characters that forms a pattern. This pattern can help you to search certain data in a text. 
 
 Basic regular expressions consist of a single literal character or a sequence of literal characters. 
