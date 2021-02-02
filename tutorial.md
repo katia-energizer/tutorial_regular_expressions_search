@@ -19,7 +19,7 @@ Regular expression or regex is a sequence of characters that forms a pattern. Th
 Basic regular expressions consist of a single literal character or a sequence of literal characters. 
 
 * `a` matches the first occurrence of the **a** character in your text.
-* `apple` matches the first occurrence of the **apple** character sequence in your text.
+* `actor` matches the first occurrence of the **actor** character sequence in your text.
 
 More complex regular expressions include special characters. 
 * `\s` matches the first occurrence of the white space character in your text.
