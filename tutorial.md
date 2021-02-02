@@ -236,7 +236,7 @@ The pattern does not match the text, so the function returns `null`.
 
 The `matches` function indicates whether the regular expression matches the entire text string. 
 
-Define if the pattern has a match in the text.
+Define if the pattern matches the entire text.
 
 1. Introduce a local variable `result5` with the keyword `val`. 
 2. Assign the following value to the `result5` variable:
