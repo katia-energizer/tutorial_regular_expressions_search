@@ -18,18 +18,19 @@ Regular expression or regex is a sequence of characters that forms a pattern. Th
 
 The most basic regular expression consists of a single literal character or a sequence of literal characters. 
 
-* a matches the first occurrence of the “a” character in your text.
-* apple matches the first occurrence of the “apple” characters in your text.
+* `a` matches the first occurrence of the "a" character in your text.
+* `apple` matches the first occurrence of the "apple" characters in your text.
 
 More complex regular expressions include special characters. 
-* \s matches the first occurrence of the white space character in your text.
-* -?\\d+(\\.\\d+)? matches the first occurrence of the number in your text.
+* `\s` matches the first occurrence of the white space character in your text.
+* `-?\\d+(\\.\\d+)?` matches the first occurrence of the number in your text.
 
-You can compine literal and special characters to can create complex patterns. For the full information about available syntax, see the [Pattern syntax reference for JVM](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html).
+You can compine literal and special characters to can create complex patterns. For the full information about available syntax, see [the Pattern syntax reference for JVM](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html).
 
-1. Define the text you plan to search in.
-    1. Introduce a local variable **text **with the keyword **val**. 
-    2. Paste the following value to the **text **variable: "Actomyosin, actor, 123.5, actress, 505, actual, actually, actuary"
+### Define the text you plan to search in.
+
+1. Introduce a local variable `text` with the keyword `val`. 
+2. Paste the following value to the `text` variable: "Actomyosin, actor, 123.5, actress, 505, actual, actually, actuary"
 
 ```
 val text = "Actomyosin, actor, 123.5, actress, 505, actual, actually, actuary"
@@ -37,48 +38,36 @@ val text = "Actomyosin, actor, 123.5, actress, 505, actual, actually, actuary"
 
 We will use a short list of words and numbers as mock data. You can also use the text of your choice. In this case, you will need to configure a search pattern that will be relevant for your text, but you still can refer to the functions and options described in this tutorial.
 
+### Define the the pattern to search with.
 
-
-2. Define the pattern to search with.
-    3. Introduce a local variable **pattern **with the keyword **val**. 
-    4. Assign the **actual **value to this variable.
-
+1. Introduce a local variable `pattern` with the keyword `val`. 
+2. Assign the `actual` value to this variable.
 
 ```
 val pattern = "actual"
 
 ```
-
-
-
-    5. Now, your pattern is just a text string. To make it into a regular expression, assign the **Regex **type to the value.
-
+3. Now, your pattern is just a text string. To make it into a regular expression, assign the `Regex` type to the value.
 
 ```
 val pattern = Regex("actual")
 ```
 
-
-In this example, we added the **Regex **type to the value. Alternatively, you can use the **toRegex** function.
-
+In this example, we added the `Regex` type to the value. Alternatively, you can use the `toRegex` function.
 
 ```
 val pattern = "actual".toRegex()
 ```
 
-
-
 ## Search with a regular expression
 
 The presence of the Regex type allows the compiler to use the following functions for your text:
 
-
-
-*   containsMatchIn
-*   find
-*   findAll
-*   matchEntire
-*   matches
+* [containsMatchIn](#containsMatchIn)
+* [find]
+* [findAll]
+* [matchEntire]
+* [matches]
 
 Note that the list above is not the full list of functions that are provided by the **Regex **type. For the full list, refer to [the Regex type reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex/#kotlin.text.Regex).
 
