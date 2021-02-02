@@ -14,9 +14,7 @@ To get started, you need to create an application [using Intellij IDEA](https://
 
 There may be times when you need to use [regular expressions](https://www.regular-expressions.info/quickstart.html). 
 
-Regular expression or regex is a character or a sequence of characters that forms a pattern. 
-
-This pattern can help you in matching, parsing, and filtering of a text. 
+Regular expression or regex is a sequence of characters that forms a pattern. This pattern can help you in matching, parsing, and filtering of a text. 
 
 The most basic regular expression consists of a single literal character.
 
