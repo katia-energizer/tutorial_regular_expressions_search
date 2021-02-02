@@ -285,7 +285,7 @@ Modufy the regular expression and add an option to it.
 
 2. Click the green **Run** icon in the gutter and select **Run 'MainKt'** to re-run your application.
 3. Check results. They have changed. For example, the `find` function result is `false` now. In Kotlin, `Actual` does not equal `actual`, so there are no matches in the text. 
-4. Add the `IGNORE_CASE` option to the pattern variable to enable case-insensitive matching:
+4. Add the `IGNORE_CASE` option to the `pattern` variable to enable case-insensitive matching:
 
    <div class="sample" markdown="1" theme="idea">
 
