@@ -2,13 +2,11 @@
 type: tutorial
 layout: tutorial
 title:  "Searching with Regular Expressions"
-description: "This tutorial demonstrates how to use regular expressions for searching in a text. "
+description: "This tutorial demonstrates how to write patterns with regular expressions and use these patterns for searching in a text."
 authors: Andrey Vityuk
 date: 2021-02-02
 showAuthorInfo: false
 ---
-
-This tutorial demonstrates how to write patterns with regular expressions and use these patterns for searching in a text.
 
 To get started, you need to create an application [using Intellij IDEA](https://kotlinlang.org/docs/tutorials/jvm-get-started.html) or another IDE with the Kotlin Programming Language support. 
 
@@ -21,7 +19,6 @@ Regular expression or regex is a character or a sequence of characters that form
 This pattern can help you in matching, parsing, and filtering of a text. 
 
 The most basic regular expression consists of a single literal character.
-
 
 <table>
   <tr>
@@ -38,11 +35,7 @@ The most basic regular expression consists of a single literal character.
   </tr>
 </table>
 
-
- 
-
 Regular expression more likely to consist of a sequence of characters.
-
 
 <table>
   <tr>
@@ -59,9 +52,7 @@ Regular expression more likely to consist of a sequence of characters.
   </tr>
 </table>
 
-
 Regular expressions can also include special characters. Special characters have a special meaning.
-
 
 <table>
   <tr>
@@ -78,9 +69,7 @@ Regular expressions can also include special characters. Special characters have
   </tr>
 </table>
 
-
 Using literal and special characters, you can create complex patterns.
-
 
 <table>
   <tr>
@@ -97,20 +86,15 @@ Using literal and special characters, you can create complex patterns.
   </tr>
 </table>
 
-
 For pattern syntax reference for JVM see [https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html) 
-
-
 
 1. Define the text you plan to search in.
     1. Introduce a local variable **text **with the keyword **val**. 
     2. Paste the following value to the **text **variable: "Actomyosin, actor, 123.5, actress, 505, actual, actually, actuary"
 
-
 ```
 val text = "Actomyosin, actor, 123.5, actress, 505, actual, actually, actuary"
 ```
-
 
 We will use a short list of words and numbers as mock data. You can also use the text of your choice. In this case, you will need to configure a search pattern that will be relevant for your text, but you still can refer to the functions and options described in this tutorial.
 
