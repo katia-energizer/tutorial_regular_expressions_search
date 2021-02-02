@@ -86,9 +86,9 @@ Define if the pattern has a match in the text.
 pattern.containsMatchIn(text)
 ```
 where:
-    * `pattern` is a variable for the search pattern.
-    * `containsMatchIn` is a search function.
-    * `text` is a variable for the text where we are searching for matches.
+* `pattern` is a variable for the search pattern.
+* `containsMatchIn` is a search function.
+* `text` is a variable for the text where we are searching for matches.
 
 3. Use the `println` function to display the result of the `result1` variable.
 
@@ -114,9 +114,9 @@ Find the first match of the pattern in the text.
 pattern.find(text)
 ```
 where:
-    * `pattern` is a variable for the search pattern.
-    * `find` is a search function.
-    * `text` is a variable for the text where we are searching for matches.
+* `pattern` is a variable for the search pattern.
+* `find` is a search function.
+   * `text` is a variable for the text where we are searching for matches.
 
 3. Use the `println` function to display the result of the `result2` variable. Use the `range` function to get a range of indexes in the text string. 
 4. If the pattern does not contain matches in the text, the `find` function returns null. To allow the `range` function to return null, add a question mark `?` after the `result2` variable name. For information about the danger of null references, refer to [Null Safety](https://kotlinlang.org/docs/reference/null-safety.html).
