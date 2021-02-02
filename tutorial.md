@@ -101,10 +101,10 @@ Define if the pattern has a match in the text.
    pattern.containsMatchIn(text)
    ```
 
-where:
-* `pattern` is a variable for the search pattern.
-* `containsMatchIn` is a search function.
-* `text` is a variable for the text where we are searching for matches.
+   where:
+   * `pattern` is a variable for the search pattern.
+   * `containsMatchIn` is a search function.
+   * `text` is a variable for the text where we are searching for matches.
 
 3. Use the `println` function to display the result of the `result1` variable.
 
@@ -171,10 +171,10 @@ Find all pattern matches in the text.
    pattern.findAll(text)
    ```
 
-where:
-* `pattern` is a variable for search pattern.
-* `findAll` is a search function.
-* `text` is a variable for the text where we are searching for matches.
+   where:
+   * `pattern` is a variable for search pattern.
+   * `findAll` is a search function.
+   * `text` is a variable for the text where we are searching for matches.
 
 3. The result of the `findAll` function is a sequence of values. Use the `forEach` function to display the result as a column of values. For information about this function, refer to [the forEach function reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/for-each.html).
 
@@ -209,10 +209,10 @@ Define if the pattern matches the entire text.
    pattern.matchEntire(text)
    ```
 
-where:
-* `pattern` is a variable for search pattern.
-* `matchEntire` is a search function.
-* `text` is a variable for the text where we are searching for matches.
+   where:
+   * `pattern` is a variable for search pattern.
+   * `matchEntire` is a search function.
+   * `text` is a variable for the text where we are searching for matches.
 
 3. Use the `println` function to display the result of the `result4` variable. Use the `range` function to get a range of indexes in the text string. 
 4. If the pattern does not contain matches in the text, the `matchEntire` function returns null. To allow the `range` function to return null, add the question mark `?` after the `result4` variable name. For information about the danger of null references, refer to [Null Safety](https://kotlinlang.org/docs/reference/null-safety.html).
@@ -243,10 +243,10 @@ Define if the pattern has a match in the text.
    pattern.matches(text)
    ```
 
-where:
-* `pattern` is a variable for the search pattern.
-* `matches` is a search function.
-* `text` is a variable for the text where we are searching for matches.
+   where:
+   * `pattern` is a variable for the search pattern.
+   * `matches` is a search function.
+   * `text` is a variable for the text where we are searching for matches.
 
 3. Use the `println` function to display the result of the `result5` variable.
 
