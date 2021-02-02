@@ -4,7 +4,7 @@ layout: tutorial
 title:  "Searching with Regular Expressions"
 description: "This tutorial demonstrates how to write patterns with regular expressions and use these patterns for searching in a text."
 authors: Andrey Vityuk
-date: 2021-02-02
+date: 2021-02-03
 showAuthorInfo: false
 ---
 
