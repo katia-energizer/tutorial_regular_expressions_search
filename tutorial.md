@@ -25,7 +25,7 @@ More complex regular expressions include special characters.
 * `\s` matches the first occurrence of the white space character in your text.
 * `\b[1-9][0-9]{2,4}\b` matches the first occurrence of the number between 100 and 99999 in your text.
 
-You can combine literal and special characters to create complex patterns. For the full information about available syntax, refere to [the Pattern syntax reference for JVM](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html).
+You can combine literal and special characters to create complex patterns. For the full information about available syntax, refer to [the Pattern syntax reference for JVM](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html).
 
 ### Define the text you plan to search in.
 
@@ -40,7 +40,7 @@ You can combine literal and special characters to create complex patterns. For t
    
    </div>
 
-In this tutorial, we will use a short list of words and numbers as mock data. You can also use the text of your choice. In this case, you will need to configure a search pattern that will be relevant for your text, but you still can refer to the described functions and options.
+In this tutorial, we will use a list of words and numbers as mock data. You can also use the text of your choice. In this case, you will need to configure a search pattern that will be relevant for your text, but you still can refer to the described functions and options.
 
 ### Define the pattern to search with.
 
@@ -158,7 +158,7 @@ Find the first match of the pattern in the text.
 
 The pattern is available in the text, so the `find` function returns the `40..45` range of indexes.
 
-For information about this function parameters and exceptions, refer to [the find function reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex/find.html). 
+For information about these function parameters and exceptions, refer to [the find function reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex/find.html). 
 
 ### findAll
 
@@ -174,7 +174,7 @@ Find all pattern matches in the text.
    ```
 
    where:
-   * `pattern` is a variable for search pattern.
+   * `pattern` is a variable for the search pattern.
    * `findAll` is a search function.
    * `text` is a variable for the text where we are searching for matches.
 
@@ -212,7 +212,7 @@ Define if the pattern matches the entire text.
    ```
 
    where:
-   * `pattern` is a variable for search pattern.
+   * `pattern` is a variable for the search pattern.
    * `matchEntire` is a search function.
    * `text` is a variable for the text where we are searching for matches.
 
@@ -271,7 +271,7 @@ You can use special options with the regular expression.
 
 In this tutorial, we will cover the `IGNORE_CASE` option. For information about other options, refer to [the RegexOption type reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex-option/).
 
-Modufy the regular expression and add an option to it.
+Modify the regular expression and add an option to it.
 
 1. Modify the value of the `pattern` variable from `actual` to `Actual`.
 
