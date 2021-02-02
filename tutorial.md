@@ -14,77 +14,18 @@ To get started, you need to create an application [using Intellij IDEA](https://
 
 There may be times when you need to use [regular expressions](https://www.regular-expressions.info/quickstart.html). 
 
-Regular expression or regex is a sequence of characters that forms a pattern. This pattern can help you in matching, parsing, and filtering of a text. 
+Regular expression or regex is a sequence of characters that forms a pattern. This pattern can help you to search certain data in a text. 
 
-The most basic regular expression consists of a single literal character.
+The most basic regular expression consists of a single literal character or a sequence of literal characters. 
 
-<table>
-  <tr>
-   <td>a
-   </td>
-   <td>Matches the first occurrence of the “a” character in your text.
-   </td>
-  </tr>
-  <tr>
-   <td>1
-   </td>
-   <td>Matches the first occurrence of the “1” character in your text.
-   </td>
-  </tr>
-</table>
+* a matches the first occurrence of the “a” character in your text.
+* apple matches the first occurrence of the “apple” characters in your text.
 
-Regular expression more likely to consist of a sequence of characters.
+More complex regular expressions include special characters. 
+* \s matches the first occurrence of the white space character in your text.
+* -?\\d+(\\.\\d+)? matches the first occurrence of the number in your text.
 
-<table>
-  <tr>
-   <td>apple
-   </td>
-   <td>Matches the first occurrence of the “apple” characters in your text.
-   </td>
-  </tr>
-  <tr>
-   <td>812a
-   </td>
-   <td>Matches the first occurrence of the “812a” characters in your text.
-   </td>
-  </tr>
-</table>
-
-Regular expressions can also include special characters. Special characters have a special meaning.
-
-<table>
-  <tr>
-   <td>\s
-   </td>
-   <td>Matches the first occurrence of the white space character in your text.
-   </td>
-  </tr>
-  <tr>
-   <td>[a-c]
-   </td>
-   <td>Matches the first occurrence of the character from the range a to d in your text.
-   </td>
-  </tr>
-</table>
-
-Using literal and special characters, you can create complex patterns.
-
-<table>
-  <tr>
-   <td>[A-Za-z0-9]
-   </td>
-   <td>Matches the first occurrence of the alphanumeric character in your text.
-   </td>
-  </tr>
-  <tr>
-   <td>-?\\d+(\\.\\d+)?
-   </td>
-   <td>Matches the first occurrence of the number in your text.
-   </td>
-  </tr>
-</table>
-
-For pattern syntax reference for JVM see [https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html) 
+You can compine literal and special characters to can create complex patterns. For the full information about available syntax, see the [Pattern syntax reference for JVM](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html).
 
 1. Define the text you plan to search in.
     1. Introduce a local variable **text **with the keyword **val**. 
