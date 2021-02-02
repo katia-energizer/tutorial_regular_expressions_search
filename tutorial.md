@@ -14,7 +14,7 @@ To get started, you need to create an application [using Intellij IDEA](https://
 
 There may be times when you need to use [regular expressions](https://www.regular-expressions.info/quickstart.html). Regular expression or regex is a sequence of characters that forms a pattern. This pattern can help you to search certain data in a text. 
 
-The most basic regular expression consists of a single literal character or a sequence of literal characters. 
+Basic regular expressions consist of a single literal character or a sequence of literal characters. 
 
 * `a` matches the first occurrence of the **a** character in your text.
 * `apple` matches the first occurrence of the **apple** characters in your text.
