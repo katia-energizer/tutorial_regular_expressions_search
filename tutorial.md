@@ -30,9 +30,12 @@ You can compine literal and special characters to can create complex patterns. F
 1. Introduce a local variable `text` with the keyword `val`. 
 2. Paste the following value to the `text` variable: "Actomyosin, actor, 123.5, actress, 505, actual, actually, actuary"
 
-```
+<div class="sample" markdown="1" theme="idea">
+
+```kotlin
 val text = "Actomyosin, actor, 123.5, actress, 505, actual, actually, actuary"
 ```
+</div>
 
 We will use a short list of words and numbers as mock data. You can also use the text of your choice. In this case, you will need to configure a search pattern that will be relevant for your text, but you still can refer to the functions and options described in this tutorial.
 
