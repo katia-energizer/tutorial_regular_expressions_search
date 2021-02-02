@@ -77,7 +77,7 @@ In this example, we added the `Regex` type to the value. Alternatively, you can 
 
 ## Search with a regular expression
 
-The presence of the `Regex` type allows the compiler to use the following functions for your text:
+The presence of the `Regex` type allows the compiler to use the following functions:
 
 * [containsMatchIn](#containsMatchIn)
 * [find](#find)
