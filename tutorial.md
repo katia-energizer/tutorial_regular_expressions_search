@@ -28,7 +28,7 @@ You can compine literal and special characters to can create complex patterns. F
 ### Define the text you plan to search in.
 
 1. Introduce a local variable `text` with the keyword `val`. 
-2. Paste the following value to the `text` variable: "Actomyosin, actor, 123.5, actress, 505, actual, actually, actuary"
+2. Paste the following value to the `text` variable: Actomyosin, actor, 123.5, actress, 505, actual, actually, actuary.
 
    <div class="sample" markdown="1" theme="idea">
 
