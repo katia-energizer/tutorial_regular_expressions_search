@@ -27,7 +27,7 @@ More complex regular expressions include special characters.
 
 You can combine literal and special characters to create complex patterns. For the full information about available syntax, refer to [the Pattern syntax reference for JVM](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html).
 
-### Define the text you plan to search in.
+### Define the text you plan to search in
 
 1. Introduce a local variable `text` with the keyword `val`. 
 2. Paste the following value to the `text` variable: Actomyosin, actor, 123.5, actress, 505, actual, actually, actuary.
@@ -42,7 +42,7 @@ You can combine literal and special characters to create complex patterns. For t
 
 In this tutorial, we will use a list of words and numbers as mock data. You can also use the text of your choice. In this case, you will need to configure a search pattern that will be relevant for your text, but you still can refer to the described functions and options.
 
-### Define the pattern to search with.
+### Define the pattern to search with
 
 1. Introduce a local variable `pattern` with the keyword `val`. 
 2. Assign the `actual` value to this variable.
