@@ -107,7 +107,12 @@ The `containsMatchIn` function attempts to can find a match of the regular expre
 
 Define if the pattern has a match in the text.
 
-1. Introduce a local variable `result1` with the keyword `val`. 
+1. Introduce a local variable `result1` with the keyword `val`.
+
+   ```
+   val result1
+   ```
+
 2. Assign the following value to the `result1` variable:
 
    ```
@@ -121,17 +126,17 @@ Define if the pattern has a match in the text.
 
 3. Use the `println` function to display the result of the `result1` variable.
 
-```kotlin
-fun main() {
+   ```kotlin
+   fun main() {
 
-   val text = "Actomyosin, 99, actor, 123, actress, 808, actual, 5005, actually, actuary"
-   val pattern = Regex("\\b[1-9][0-9]{2}\\b")
-   val result1 = pattern.containsMatchIn(text)
+      val text = "Actomyosin, 99, actor, 123, actress, 808, actual, 5005, actually, actuary"
+      val pattern = Regex("\\b[1-9][0-9]{2}\\b")
+      val result1 = pattern.containsMatchIn(text)
    
-   println("The containsMatchIn function returns $result1.") //true
+      println("The containsMatchIn function returns $result1.") //true
 
-}
-```
+   }
+   ```
    
 4. To run your application, click the green **Run** icon in the gutter and select **Run 'MainKt'**.
 
@@ -144,6 +149,11 @@ The `find` function returns the first match of a regular expression in the text.
 Find the first match of the pattern in the text.
 
 1. Introduce a local variable `result2` with the keyword `val`. 
+
+   ```
+   val result2
+   ```
+
 2. Assign the following value to the `result2` variable: 
  
    ```
@@ -155,24 +165,23 @@ Find the first match of the pattern in the text.
    * `find` is a search function.
    * `text` is a variable for the text where we are searching for matches.
    
-3. Use the `println` function to display the result of the `result2` variable and the `value` function to get the first number that matches the regular expression. 
-4. If the pattern does not have matches in the text, the `find` function returns `null`. To allow the `value` function to return `null`, add a question mark `?` after the `result2` variable name. For information about the danger of null references, refer to [Null Safety](https://kotlinlang.org/docs/reference/null-safety.html).
+3. Use the `println` function to display the result of the `result2` variable and the `value` function to get the first number that matches the regular expression. If the pattern does not have matches in the text, the `find` function returns `null`. To allow the `value` function to return `null`, add a question mark `?` after the `result2` variable name. For information about the danger of null references, refer to [Null Safety](https://kotlinlang.org/docs/reference/null-safety.html).
 
-```kotlin
-fun main() {
+   ```kotlin
+   fun main() {
 
-   val text = "Actomyosin, 99, actor, 123, actress, 808, actual, 5005, actually, actuary"
-   val pattern = Regex("\\b[1-9][0-9]{2}\\b")
-   val result2 = pattern.find(text)
+      val text = "Actomyosin, 99, actor, 123, actress, 808, actual, 5005, actually, actuary"
+      val pattern = Regex("\\b[1-9][0-9]{2}\\b")
+      val result2 = pattern.find(text)
    
-   println("The find function returns ${result2?.value}.") //123
+      println("The find function returns ${result2?.value}.") //123
    
-}
- ```
+   }
+   ```
    
 5. To run your application, click the green **Run** icon in the gutter and select **Run 'MainKt'**.
 
-The pattern is available in the text, so the `find` function returns the `19..21` range of indexes.
+The function returns the first match in the list: `123`.
 
 For information about function parameters and exceptions, refer to the [`find` function reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex/find.html). 
 
@@ -182,7 +191,12 @@ The `findAll` returns all matches of the regular expression in your text.
 
 Find all pattern matches in the text.
 
-1. Introduce a local variable `result3` with the keyword `val`. 
+1. Introduce a local variable `result3` with the keyword `val`.
+
+   ```
+   val result 3
+   ```
+
 2. Assign the following value to the `result3` variable:
 
    ```
@@ -202,24 +216,25 @@ Find all pattern matches in the text.
    
 4. The result of the `findAll` function is a sequence of values. Use the `value` function to get the list of numbers that match the regular expression and the `forEach` function to display the result as a column of values. For information about this function, refer to the [`forEach` function reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/for-each.html).
 
-```kotlin
-fun main() {
+   ```kotlin
+   fun main() {
 
-    val text = "Actomyosin, 99, actor, 123, actress, 808, actual, 5005, actually, actuary"
-    val pattern = Regex("\\b[1-9][0-9]{2}\\b")
-    val result3 = pattern.findAll(text)
-    println("The findAll function returns")
-    result3.forEach { match ->
-      val values = match.value
-      println(values) //123, 808
-   }
+       val text = "Actomyosin, 99, actor, 123, actress, 808, actual, 5005, actually, actuary"
+       val pattern = Regex("\\b[1-9][0-9]{2}\\b")
+       val result3 = pattern.findAll(text)
+       
+       println("The findAll function returns")
+       result3.forEach { match ->
+         val values = match.value
+         println(values) //123, 808
+      }
    
-}
-```
+   }
+   ```
 
 4. To run your application, click the green **Run** icon in the gutter and select **Run 'MainKt'**.
 
-The pattern has two matches in the text: `actual` and `actual` in `actually`, so the `findAll` function returns 2 values: `40..45` and `48..53`.
+The pattern has twp matches in the text: `123` and `808`, so the `findAll` function returns 2 values.
 
 For information about function parameters and exceptions, refer to the [`findAll` function reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex/find-all.html).
 
@@ -230,6 +245,11 @@ The `matchEntire` function attempts to match the regular expression against the 
 Define if the pattern matches the entire text.
 
 1. Introduce a local variable `result4` with the keyword `val`. 
+
+   ```
+   val resul4
+   ```
+
 2. Assign the following value to the `result4` variable:
 
    ```
@@ -241,12 +261,18 @@ Define if the pattern matches the entire text.
    * `matchEntire` is a search function.
    * `text` is a variable for the text where we are searching for matches.
 
-3. Use the `println` function to display the result of the `result4` variable. Use the `range` function to get a range of indexes in the text string. 
-4. If the pattern does not have matches in the text, the `matchEntire` function returns `null`. To allow the `range` function to return `null`, add the question mark `?` after the `result4` variable name. For information about the danger of null references, refer to [Null Safety](https://kotlinlang.org/docs/reference/null-safety.html).
+3. Use the `println` function to display the result of the `result4` variable. Use the `value` function to get a range of indexes in the text string. If the pattern does not have matches in the text, the `matchEntire` function returns `null`. To allow the `range` function to return `null`, add the question mark `?` after the `result4` variable name. For information about the danger of null references, refer to [Null Safety](https://kotlinlang.org/docs/reference/null-safety.html).
 
    ```kotlin
-   val result4 = pattern.matchEntire(text)
-   println(result4?.range)
+   fun main() {
+
+      val text = "Actomyosin, 99, actor, 123, actress, 808, actual, 5005, actually, actuary"
+      val pattern = Regex("\\b[1-9][0-9]{2}\\b")
+      val result4 = pattern.matchEntire(text)
+   
+      println("The matchEntire function returns ${result4?.range}")
+      
+   }
    ```
 
 5. To run your application, click the green **Run** icon in the gutter and select **Run 'MainKt'**.
@@ -259,7 +285,12 @@ The `matches` function indicates whether the regular expression matches the enti
 
 Define if the pattern matches the entire text.
 
-1. Introduce a local variable `result5` with the keyword `val`. 
+1. Introduce a local variable `result5` with the keyword `val`.
+
+   ```
+   val result5
+   ```
+
 2. Assign the following value to the `result5` variable:
 
    ```
@@ -274,9 +305,16 @@ Define if the pattern matches the entire text.
 3. Use the `println` function to display the result of the `result5` variable.
 
    ```kotlin
-    val result5 = pattern.matches(text)
-    println(result5)
-    ```
+   fun main() {
+
+   val text = "Actomyosin, 99, actor, 123, actress, 808, actual, 5005, actually, actuary"
+   val pattern = Regex("\\b[1-9][0-9]{2}\\b")
+   val result5 = pattern.matches(text)
+    
+   println("The matches function returns $result5")
+   
+   }
+   ```
     
 4. To run your application, click the green **Run** icon in the gutter and select **Run 'MainKt'**.
 
@@ -284,4 +322,6 @@ The pattern does not match the text, so the function returns the `false` value.
 
 ## What's next?
 
-In this tutorial, we explained how to write patterns with regular expressions and use these patterns for searching data in a text. To extend this knowledge, you can search for a number using the pattern with special characters or replace data in the text using [other functions of the `Regex` type](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex/#kotlin.text.Regex$replace(kotlin.CharSequence,%20kotlin.String)/input).
+In this tutorial, we explained how to write patterns with regular expressions and use these patterns for searching data in a text. To extend this knowledge, you can:
+* Add options to your regular expression using the [`RegexOption` type reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex-option/). pattern with special characters 
+* Replace data in the text using [other functions of the `Regex` type](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex/#kotlin.text.Regex$replace(kotlin.CharSequence,%20kotlin.String)/input).
