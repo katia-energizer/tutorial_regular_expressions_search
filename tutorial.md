@@ -18,6 +18,8 @@ This tutorial consists of three parts:
 * [Search with regular expressions](#Search-with-a-regular-expression)
 * [Add an option to a regular expression](#Add-an-option-to-a-regular-expression)
 
+You will learn about five search functions:
+
 | **function** | **Description**  |
 |---------------|------------------|
 | `containsMatchIn`| Finds out does the text contain any matches. |
@@ -25,6 +27,8 @@ This tutorial consists of three parts:
 | `findAll`        | Finds all matches. |
 | `matchEntire`    | Finds out does the regular expression matches the whole text. Returns a Booolean value. |
 | `matches`        | Finds out does the regular expression matches the whole text. Returns a parameter. |
+
+You will also learn about the `IGNORE_CASE` option that allows to ignore character case whe searching for matches.
 
 To get started, you need to create an application [using Intellij IDEA](https://kotlinlang.org/docs/tutorials/jvm-get-started.html) or another IDE with the Kotlin Programming Language support. 
 
