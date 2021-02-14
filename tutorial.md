@@ -276,7 +276,7 @@ Define if the pattern matches the entire text.
       val pattern = Regex("\\b[1-9][0-9]{2}\\b")
       val result4 = pattern.matchEntire(text)
    
-      println("The matchEntire function returns ${result4?.range}")
+      println("The matchEntire function returns ${result4?.range}") //null
       
    }
    ```
@@ -317,7 +317,7 @@ Define if the pattern matches the entire text.
    val pattern = Regex("\\b[1-9][0-9]{2}\\b")
    val result5 = pattern.matches(text)
     
-   println("The matches function returns $result5")
+   println("The matches function returns $result5") //false
    
    }
    ```
