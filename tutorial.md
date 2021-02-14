@@ -15,7 +15,7 @@ You will create a regular expression and write search functions using this regul
 This tutorial consists of two parts:
 
 * [Create a regular expression](#Create-a-regular-expression)
-* [Search with regular expressions](#Search-with-a-regular-expression)
+* [Search with a regular expression](#Search-with-a-regular-expression)
 
 You will learn about five search functions:
 
