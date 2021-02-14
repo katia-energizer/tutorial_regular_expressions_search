@@ -18,7 +18,7 @@ This tutorial consists of three parts:
 * [Search with regular expressions](#Search-with-a-regular-expression)
 * [Add an option to a regular expression](#Add-an-option-to-a-regular-expression)
 
-In the [Search with regular expressions](#Search with a regular expression) part, you will learn how to:
+In the [Search with regular expressions](#Search-with-a-regular-expression) part, you will learn how to:
 
 * [Find out does the text contain any matches of your regular expression](#containsMatchIn)
 * [Find the first regular expression match in the text](#find)
