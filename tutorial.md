@@ -22,19 +22,19 @@ You will learn about five search functions:
 
 | **Function** | **Description**  |
 |---------------|------------------|
-| `containsMatchIn`| Finds out does the text contain any matches. |
-| `find`           | Finds the first match. |
-| `findAll`        | Finds all matches. |
-| `matchEntire`    | Finds out does the regular expression matches the whole text. Returns a Booolean value. |
-| `matches`        | Finds out does the regular expression matches the whole text. Returns a parameter. |
+| [`containsMatchIn`](#containsMatchIn)| Finds out does the text contain any matches. |
+| [`find`](#find)                      | Finds the first match. |
+| [`findAll`](#findAll)                | Finds all matches. |
+| [`matchEntire`](#matchEntire)        | Finds out does the regular expression matches the whole text. Returns a Booolean value. |
+| [`matches`](#matches)                | Finds out does the regular expression matches the whole text. Returns a parameter. |
 
 You will also learn about three options:
 
 | **Option** | **Description**  |
 |---------------|------------------|
-| `IGNORE_CASE`| Ignores character case when searching for matches. |
-| `COMMENTS`| XXX |
-| `LITERAL`| XXX |
+| [`IGNORE_CASE`](#)| Ignores character case when searching for matches. |
+| [`COMMENTS`](#)   | XXX |
+| [`LITERAL`](#)    | XXX |
 
 To get started, you need to create an application [using Intellij IDEA](https://kotlinlang.org/docs/tutorials/jvm-get-started.html) or another IDE with the Kotlin Programming Language support. 
 
