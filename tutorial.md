@@ -69,7 +69,7 @@ You can combine literal and special characters to create complex patterns. For t
 
 With this regular expression, you can search for numbers between 100 and 999.
 
-3. Add an extra backslash before each `\b` part of the regular expression. `\b` is a metacharacter with a special meaning: it matches a number boundary. You must use `\` as an escape character before metacharacters. Otherwise metacharacters will be read by compiler literally without any special meanings. 
+3. Add an extra backslash before each `\b` part of the regular expression. `\b` is a metacharacter with a special meaning: it matches a number boundary. You must use `\` as an escape character before metacharacters. Otherwise, compiler will read metacharacters literally ignoring their special meanings. 
 
    ```kotlin
    val pattern = "\\b[1-9][0-9]{2}\\b"
