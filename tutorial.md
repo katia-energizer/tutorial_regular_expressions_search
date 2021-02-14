@@ -89,10 +89,10 @@ In this example, we added the `Regex` type to the value. Alternatively, you can 
 
 In this part, you will learn how to:
 
-* Find out does the text contain any matches of your regular expression using the [containsMatchIn](#containsMatchIn) function
-* Find the first regular expression match in the text using the [find](#find) function
-* Find all regular expression matches in the text using the [findAll](#findAll) function
-* Learn if your regular expression matches the whole text; depending on a applied function, you can get a Booolean value or a certain match parameter using the [matchEntire](#matchEntire) or [matches](#matches) functions.
+* Find out does the text contain any matches of your regular expression using the [`containsMatchIn`](#containsMatchIn) function
+* Find the first regular expression match in the text using the [`find`](#find) function
+* Find all regular expression matches in the text using the [`findAll`](#findAll) function
+* Learn if your regular expression matches the whole text; depending on a applied function, you can get a Booolean value or a certain match parameter using the [`matchEntire`](#matchEntire) or [`matches`](#matches) functions.
 
 Toy can find the full list of functions in the [`Regex` type reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex/#kotlin.text.Regex).
 
