@@ -18,6 +18,14 @@ This tutorial consists of three parts:
 * [Search with regular expressions](#Search-with-a-regular-expression)
 * [Add an option to a regular expression](#Add-an-option-to-a-regular-expression)
 
+| **function** | **Description**  |
+|---------------|------------------|
+| `containsMatchIn`| Finds out does the text contain any matches. |
+| `find`           | Finds the first match. |
+| `findAll`        | Finds all matches. |
+| `matchEntire`    | Finds out does the regular expression matches the whole text. Returns a Booolean value. |
+| `matches`        | Finds out does the regular expression matches the whole text. Returns a parameter. |
+
 To get started, you need to create an application [using Intellij IDEA](https://kotlinlang.org/docs/tutorials/jvm-get-started.html) or another IDE with the Kotlin Programming Language support. 
 
 ## Create a regular expression
