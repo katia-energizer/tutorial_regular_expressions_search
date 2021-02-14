@@ -55,8 +55,7 @@ You can combine literal and special characters to create complex patterns. For t
    val text = "Actomyosin, 99, actor, 123, actress, 808, actual, 5005, actually, actuary"
    ```
 
->
-In this tutorial, we will use a list of words and numbers as mock data. You can also use the text of your choice. In this case, you will need to configure a search pattern that will be relevant for your text, but you still can refer to the described functions and options.
+> In this tutorial, we will use a list of words and numbers as mock data. You can also use the text of your choice. In this case, you will need to configure a search pattern that will be relevant for your text, but you still can refer to the described functions and options.
 >
 
 ### Define the pattern to search with
@@ -88,8 +87,7 @@ In this example, we added the `Regex` type to the value. Alternatively, you can 
    val pattern = "\\b[1-9][0-9]{2}\\b".toRegex()
    ```
 
->
-In this tutorial, we will search for numbers. You can also create a regular expression of your choice. In this case, you will need to have a relevant text for your regular expression, but you still can refer to the described functions and options.
+> In this tutorial, we will search for numbers. You can also create a regular expression of your choice. In this case, you will need to have a relevant text for your regular expression, but you still can refer to the described functions and options.
 >
 
 ## Search with a regular expression
