@@ -89,7 +89,7 @@ In this example, we added the `Regex` type to the value. Alternatively, you can 
    val pattern = "\\b[1-9][0-9]{2}\\b".toRegex()
    ```
 
-> In this tutorial, we will search for numbers. You can also create a regular expression of your choice. In this case, you will need to have a relevant text for your regular expression, but you still can refer to the described functions and options.
+> In this tutorial, we will search for numbers between 100 and 999. You can also create a regular expression of your choice. In this case, you will need to have a relevant text for your regular expression, but you still can refer to the described functions and options.
 >
 
 ## Search with a regular expression
