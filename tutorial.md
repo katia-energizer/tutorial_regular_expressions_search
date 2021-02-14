@@ -198,7 +198,7 @@ The pattern has two matches in the text: `actual` and `actual` in `actually`, so
 
 For information about function parameters and exceptions, refer to the [`findAll` function reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex/find-all.html).
 
-### matchEntire — finds out does the regular expression matches the whole text; returns a Booolean value
+### matchEntire — finds out does the regular expression match the whole text; returns a Booolean value
 
 The `matchEntire` function attempts to match the regular expression against the entire text string. 
 
@@ -228,7 +228,7 @@ Define if the pattern matches the entire text.
 
 The pattern does not match the text, so the function returns `null`.
 
-### matches — finds out does the regular expression matches the whole text; returns a parameter
+### matches — finds out does the regular expression match the whole text; returns a parameter
 
 The `matches` function indicates whether the regular expression matches the entire text string. 
 
