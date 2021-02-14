@@ -24,8 +24,8 @@ You will learn about five search functions:
 | [`containsMatchIn`](#containsMatchIn--finds-out-does-the-text-contain-any-matches)| Finds out does the text contain any matches. |
 | [`find`](#find--finds-the-first-match)                                            | Finds the first match. |
 | [`findAll`](#findAll--finds-all-matches)                                          | Finds all matches. |
-| [`matchEntire`](#matchEntire--finds-out-does-the-regular-expression-match-the-whole-text-returns-a-Booolean-value) | Finds out does the regular expression match the whole text. Returns a Booolean value. |
-| [`matches`](#matches--finds-out-does-the-regular-expression-match-the-whole-text-returns-a-parameter) | Finds out does the regular expression match the whole text. Returns a parameter. |
+| [`matchEntire`](#matchEntire--finds-out-does-the-regular-expression-match-the-whole-text-returns-a-Booolean-value) | Finds out does the regular expression match the whole text. Returns a match parameter. |
+| [`matches`](#matches--finds-out-does-the-regular-expression-match-the-whole-text-returns-a-parameter) | Finds out does the regular expression match the whole text. Returns a Booolean value. |
 
 To get started, you need to create an application [using Intellij IDEA](https://kotlinlang.org/docs/tutorials/jvm-get-started.html) or another IDE with the Kotlin Programming Language support. 
 
@@ -242,7 +242,7 @@ The pattern has twp matches in the text: `123` and `808`, so the `findAll` funct
 
 For information about function parameters and exceptions, refer to the [`findAll` function reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex/find-all.html).
 
-### matchEntire — finds out does the regular expression match the whole text; returns a Booolean value
+### matchEntire — finds out does the regular expression match the whole text; returns a match parameter
 
 The `matchEntire` function attempts to match the regular expression against the entire text string. 
 
@@ -285,7 +285,7 @@ Define if the pattern matches the entire text.
 
 The pattern does not match the text, so the function returns `null`.
 
-### matches — finds out does the regular expression match the whole text; returns a parameter
+### matches — finds out does the regular expression match the whole text; returns a Booolean value
 
 The `matches` function indicates whether the regular expression matches the entire text string. 
 
