@@ -42,7 +42,7 @@ Basic regular expressions consist of a single literal character or a sequence of
 
 More complex regular expressions include special characters. 
 * `\s` matches the first occurrence of the white space character in your text.
-* `\\b[1-9][0-9]{2,4}\\b` matches the first occurrence of the number between 100 and 99999 in your text.
+* `\b[1-9][0-9]{2,4}\b` matches the first occurrence of the number between 100 and 99999 in your text.
 
 You can combine literal and special characters to create complex patterns. For the full information about available syntax, refer to the [Pattern syntax reference for JVM](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html).
 
@@ -65,17 +65,22 @@ In this tutorial, we will use a list of words and numbers as mock data. You can 
    ```kotlin
    val pattern = "\b[1-9][0-9]{2,4}\b"
    ```
+3.
+
+> This tutorial is a continuation of the previous tutorial – [Create a RESTful web service with Spring Boot](jvm-spring-boot-restful.md). Complete the previous tutorial before proceeding with this one.
+>
+{type="note"}
 
 3. Now, your pattern is just a text string. To make it into a regular expression, assign the `Regex` type to the value.
 
    ```kotlin
-   val pattern = Regex("\b[1-9][0-9]{2,4}\b")
+   val pattern = Regex("\\b[1-9][0-9]{2,4}\\b")
    ```
 
 In this example, we added the `Regex` type to the value. Alternatively, you can use the `toRegex` function.
 
    ```kotlin
-   val pattern = "\b[1-9][0-9]{2,4}\b".toRegex()
+   val pattern = "\\b[1-9][0-9]{2,4}\\b".toRegex()
    ```
 
 ## Search with a regular expression
