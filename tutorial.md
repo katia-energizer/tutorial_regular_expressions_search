@@ -52,7 +52,7 @@ You can combine literal and special characters to create complex patterns. For t
 2. Assign the following value to the `text` variable: Actomyosin, actor, 123.5, actress, 505, actual, actually, actuary.
 
    ```kotlin
-   val text = "Actomyosin, actor, 123.5, actress, 505, actual, actually, actuary"
+   val text = "Actomyosin, actor, 123, actress, 505, actual, actually, actuary"
    ```
 
 In this tutorial, we will use a list of words and numbers as mock data. You can also use the text of your choice. In this case, you will need to configure a search pattern that will be relevant for your text, but you still can refer to the described functions and options.
@@ -112,8 +112,8 @@ Define if the pattern has a match in the text.
 ```kotlin
 fun main() {
 
-   val text = "Actomyosin, actor, 123.5, actress, 505, actual, actually, actuary"
-   val pattern = Regex("actual")
+   val text = "Actomyosin, actor, 123, actress, 505, actual, actually, actuary"
+   val pattern = Regex("\b[1-9][0-9]{2,4}\b")
    val result1 = pattern.containsMatchIn(text)
    
    println("The containsMatchIn function returns $result1.") //true
@@ -149,18 +149,18 @@ Find the first match of the pattern in the text.
 ```kotlin
 fun main() {
 
-   val text = "Actomyosin, actor, 123.5, actress, 505, actual, actually, actuary"
-   val pattern = Regex("actual")
+   val text = "Actomyosin, actor, 123, actress, 505, actual, actually, actuary"
+   val pattern = Regex("\b[1-9][0-9]{2,4}\b")
    val result2 = pattern.find(text)
    
-   println("The find function returns $result2?.range.") //40..45
+   println("The find function returns $result2?.range.") //19..21
    
 }
  ```
    
 5. To run your application, click the green **Run** icon in the gutter and select **Run 'MainKt'**.
 
-The pattern is available in the text, so the `find` function returns the `40..45` range of indexes.
+The pattern is available in the text, so the `find` function returns the `19..21` range of indexes.
 
 For information about function parameters and exceptions, refer to the [`find` function reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex/find.html). 
 
@@ -184,13 +184,17 @@ Find all pattern matches in the text.
 
 3. The result of the `findAll` function is a sequence of values. Use the `forEach` function to display the result as a column of values. For information about this function, refer to the [`forEach` function reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/for-each.html).
 
-   ```kotlin
-   val result3 = pattern.findAll(text)
-   result3.forEach { match ->
-      val indexes = match.range
-      println("$indexes")
-   }
-   ```
+```kotlin
+fun main() {
+
+    val text = "Actomyosin, actor, 123.5, actress, 505, actual, actually, actuary"
+    val just_string = "actual"
+   val pattern = Regex("\\b[1-9][0-9]{2,4}\\b")
+   
+   println("$indexes")
+   
+}
+```
 
 4. To run your application, click the green **Run** icon in the gutter and select **Run 'MainKt'**.
 
