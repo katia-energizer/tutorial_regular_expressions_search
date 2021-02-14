@@ -98,7 +98,7 @@ You can find the full list of functions in the [`Regex` type reference](https://
 
 ### containsMatchIn — finds out does the text contain any matches 
 
-The `containsMatchIn` function indicates whether the regular expression can find at least one match in your text.
+The `containsMatchIn` function attempts to can find a match of the regular expression in your text.
 
 Define if the pattern has a match in the text.
 
@@ -153,14 +153,16 @@ Find the first match of the pattern in the text.
 3. Use the `println` function to display the result of the `result2` variable. Use the `range` function to get a range of indexes in the text string. 
 4. If the pattern does not have matches in the text, the `find` function returns `null`. To allow the `range` function to return `null`, add a question mark `?` after the `result2` variable name. For information about the danger of null references, refer to [Null Safety](https://kotlinlang.org/docs/reference/null-safety.html).
 
-   <div class="sample" markdown="1" theme="idea">
+```kotlin
+fun main(args: Array<String>) {
 
-   ```kotlin
+   val text = "Actomyosin, actor, 123.5, actress, 505, actual, actually, actuary"
+   val pattern = Regex("actual")
    val result2 = pattern.find(text)
-   println(result2?.range) 
-   ```
+   println("The find function returns $result2?.range.") //40..45
    
-   </div>
+}
+ ```
    
 5. To run your application, click the green **Run** icon in the gutter and select **Run 'MainKt'**.
 
