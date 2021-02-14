@@ -329,5 +329,5 @@ The pattern does not match the text, so the function returns the `false` value.
 ## What's next?
 
 In this tutorial, we explained how to write patterns with regular expressions and use these patterns for searching data in a text. To extend this knowledge, you can:
-* Add options to your regular expression using the [`RegexOption` type reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex-option/). pattern with special characters 
-* Replace data in the text using [other functions of the `Regex` type](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex/#kotlin.text.Regex$replace(kotlin.CharSequence,%20kotlin.String)/input).
+* Add options to your regular expression using the [`RegexOption` type reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex-option/)
+* Replace data in the text using [other functions of the `Regex` type](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex/#kotlin.text.Regex$replace(kotlin.CharSequence,%20kotlin.String)/input)
