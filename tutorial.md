@@ -116,7 +116,14 @@ Define if the pattern has a match in the text.
 
 3. Use the `println` function to display the result of the `result1` variable.
 
+```kotlin
+fun main(args: Array<String>) {
 
+val result1 = pattern.containsMatchIn(text)
+println("The containsMatchIn function returns $result1.") //true
+
+}
+```
    
 4. To run your application, click the green **Run** icon in the gutter and select **Run 'MainKt'**.
 
