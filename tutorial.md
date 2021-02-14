@@ -94,7 +94,7 @@ In this part, you will learn how to:
 * Find all regular expression matches in the text using the [findAll](#findAll) function
 * Learn if your regular expression matches the whole text; depending on a applied function, you can get a Booolean value or a certain match parameter using the [matchEntire](#matchEntire) or [matches](#matches) functions.
 
-Note that the list above is not the full list of functions that are provided by the `Regex` type. For the full list, refer to the [Regex type reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex/#kotlin.text.Regex).
+Toy can find the full list of functions in the [`Regex` type reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex/#kotlin.text.Regex).
 
 ### containsMatchIn
 
@@ -273,7 +273,11 @@ The pattern does not match the text, so the function returns the `false` value.
 
 ## Add an option to a regular expression
 
-You can use special options with the regular expression. In this tutorial, you will learn how to ignore character case when searching for matches using the `IGNORE_CASE` option. For information about other options, refer to the [RegexOption type reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex-option/).
+You can use special options with the regular expression. 
+
+In this tutorial, you will learn how to ignore character case when searching for matches using the `IGNORE_CASE` option. 
+
+You can find the full list of options in the [RegexOption type reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex-option/).
 
 Modify the regular expression and add an option to it.
 
