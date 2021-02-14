@@ -159,6 +159,7 @@ fun main(args: Array<String>) {
    val text = "Actomyosin, actor, 123.5, actress, 505, actual, actually, actuary"
    val pattern = Regex("actual")
    val result2 = pattern.find(text)
+   
    println("The find function returns $result2?.range.") //40..45
    
 }
