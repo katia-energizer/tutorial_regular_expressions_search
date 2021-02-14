@@ -18,13 +18,6 @@ This tutorial consists of three parts:
 * [Search with regular expressions](#Search-with-a-regular-expression)
 * [Add an option to a regular expression](#Add-an-option-to-a-regular-expression)
 
-In the [Search with regular expressions](#Search-with-a-regular-expression) part, you will learn how to:
-
-* [Find out does the text contain any matches of your regular expression](#containsMatchIn)
-* [Find the first regular expression match in the text](#find)
-* [Find all regular expression matches in the text](#findAll)
-* Learn if your regular expression matches the text; depending on a applied function, you can get a [Booolean value](#matchEntire) or a [certain match parameter](#matches)
-
 In the [Add an option to a regular expression](#Add-an-option-to-a-regular-expression) part, you will learn how to ignore character case when searching for matches.
 
 To get started, you need to create an application [using Intellij IDEA](https://kotlinlang.org/docs/tutorials/jvm-get-started.html) or another IDE with the Kotlin Programming Language support. 
@@ -96,13 +89,12 @@ In this example, we added the `Regex` type to the value. Alternatively, you can 
 
 ## Search with a regular expression
 
-The presence of the `Regex` type allows the compiler to use the following functions:
+In this part, you will learn how to:
 
-* [containsMatchIn](#containsMatchIn) —
-* [find](#find) —
-* [findAll](#findAll) —
-* [matchEntire](#matchEntire) —
-* [matches](#matches) —
+* Find out does the text contain any matches of your regular expression using the [containsMatchIn](#containsMatchIn) function
+* Find the first regular expression match in the text] using the [find](#find) function
+* Find all regular expression matches in the text using the [findAll](#findAll) function
+* Learn if your regular expression matches the text; depending on a applied function, you can get a Booolean value or a certain match parameter using the [matchEntire](#matchEntire) or the [matches](#matches) functions
 
 The `Regex` type also allows to use special [options](#user-content-add-an-option-to-a-regular-expression) with regular expressions.
 
