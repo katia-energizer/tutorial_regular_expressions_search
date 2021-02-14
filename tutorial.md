@@ -165,7 +165,9 @@ Find the first match of the pattern in the text.
    * `find` is a search function.
    * `text` is a variable for the text where we are searching for matches.
    
-3. Use the `println` function to display the result of the `result2` variable and the `value` function to get the first number that matches the regular expression. If the pattern does not have matches in the text, the `find` function returns `null`. To allow the `value` function to return `null`, add a question mark `?` after the `result2` variable name. For information about the danger of null references, refer to [Null Safety](https://kotlinlang.org/docs/reference/null-safety.html).
+3. Use the `println` function to display the result of the `result2` variable and the `value` function to get the first number that matches the regular expression. 
+
+   If the pattern does not have matches in the text, the `find` function returns `null`. To allow the `value` function to return `null`, add a question mark `?` after the          `result2` variable name. For information about the danger of null references, refer to [Null Safety](https://kotlinlang.org/docs/reference/null-safety.html).
 
    ```kotlin
    fun main() {
@@ -261,7 +263,9 @@ Define if the pattern matches the entire text.
    * `matchEntire` is a search function.
    * `text` is a variable for the text where we are searching for matches.
 
-3. Use the `println` function to display the result of the `result4` variable. Use the `value` function to get a range of indexes in the text string. If the pattern does not have matches in the text, the `matchEntire` function returns `null`. To allow the `range` function to return `null`, add the question mark `?` after the `result4` variable name. For information about the danger of null references, refer to [Null Safety](https://kotlinlang.org/docs/reference/null-safety.html).
+3. Use the `println` function to display the result of the `result4` variable. Use the `value` function to get a range of indexes in the text string. 
+
+   If the pattern does not have matches in the text, the `matchEntire` function returns `null`. To allow the `range` function to return `null`, add the question mark `?` after    the `result4` variable name. For information about the danger of null references, refer to [Null Safety](https://kotlinlang.org/docs/reference/null-safety.html).
 
    ```kotlin
    fun main() {
