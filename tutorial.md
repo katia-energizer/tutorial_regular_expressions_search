@@ -17,7 +17,7 @@ This tutorial consists of two parts:
 * [Create a regular expression](#Create-a-regular-expression)
 * [Search with a regular expression](#Search-with-a-regular-expression)
 
-   In this part, you will learn about five search functions:
+   In the second part, you will learn about five search functions:
 
    | **Function** | **Description**  |
    |---------------|------------------|
