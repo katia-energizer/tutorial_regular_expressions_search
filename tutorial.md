@@ -164,7 +164,7 @@ Find the first match of the pattern in the text.
 
 The pattern is available in the text, so the `find` function returns the `40..45` range of indexes.
 
-For information about function parameters and exceptions, refer to the [find function reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex/find.html). 
+For information about function parameters and exceptions, refer to the [`find` function reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex/find.html). 
 
 ### findAll
 
@@ -184,7 +184,7 @@ Find all pattern matches in the text.
    * `findAll` is a search function.
    * `text` is a variable for the text where we are searching for matches.
 
-3. The result of the `findAll` function is a sequence of values. Use the `forEach` function to display the result as a column of values. For information about this function, refer to the [forEach function reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/for-each.html).
+3. The result of the `findAll` function is a sequence of values. Use the `forEach` function to display the result as a column of values. For information about this function, refer to the [`forEach` function reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/for-each.html).
 
    <div class="sample" markdown="1" theme="idea">
 
@@ -202,7 +202,7 @@ Find all pattern matches in the text.
 
 The pattern has two matches in the text: `actual` and `actual` in `actually`, so the `findAll` function returns 2 values: `40..45` and `48..53`.
 
-For information about function parameters and exceptions, refer to the [findAll function reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex/find-all.html).
+For information about function parameters and exceptions, refer to the [`findAll` function reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex/find-all.html).
 
 ### matchEntire
 
@@ -277,7 +277,7 @@ You can use special options with the regular expression.
 
 In this tutorial, you will learn how to ignore character case when searching for matches using the `IGNORE_CASE` option. 
 
-You can find the full list of options in the [RegexOption type reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex-option/).
+You can find the full list of options in the [`RegexOption` type reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex-option/).
 
 Modify the regular expression and add an option to it.
 
