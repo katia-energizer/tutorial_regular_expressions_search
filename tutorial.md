@@ -18,8 +18,6 @@ This tutorial consists of three parts:
 * [Search with regular expressions](#Search-with-a-regular-expression)
 * [Add an option to a regular expression](#Add-an-option-to-a-regular-expression)
 
-In the [Add an option to a regular expression](#Add-an-option-to-a-regular-expression) part, you will learn how to ignore character case when searching for matches.
-
 To get started, you need to create an application [using Intellij IDEA](https://kotlinlang.org/docs/tutorials/jvm-get-started.html) or another IDE with the Kotlin Programming Language support. 
 
 ## Create a regular expression
@@ -99,7 +97,6 @@ In this part, you will learn how to:
 The `Regex` type also allows to use special [options](#user-content-add-an-option-to-a-regular-expression) with regular expressions.
 
 Note that the list above is not the full list of functions that are provided by the `Regex` type. For the full list, refer to the [Regex type reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex/#kotlin.text.Regex).
-
 
 ### containsMatchIn
 
@@ -278,9 +275,7 @@ The pattern does not match the text, so the function returns the `false` value.
 
 ## Add an option to a regular expression
 
-You can use special options with the regular expression.
-
-In this tutorial, we will cover the `IGNORE_CASE` option. For information about other options, refer to the [RegexOption type reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex-option/).
+You can use special options with the regular expression. In this tutorial, you will learn how to ignore character case when searching for matches using the `IGNORE_CASE` option. For information about other options, refer to the [RegexOption type reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex-option/).
 
 Modify the regular expression and add an option to it.
 
