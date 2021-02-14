@@ -51,13 +51,9 @@ You can combine literal and special characters to create complex patterns. For t
 1. Introduce a local variable `text` with the keyword `val`. 
 2. Assign the following value to the `text` variable: Actomyosin, actor, 123.5, actress, 505, actual, actually, actuary.
 
-   <div class="sample" markdown="1" theme="idea">
-
    ```kotlin
    val text = "Actomyosin, actor, 123.5, actress, 505, actual, actually, actuary"
    ```
-   
-   </div>
 
 In this tutorial, we will use a list of words and numbers as mock data. You can also use the text of your choice. In this case, you will need to configure a search pattern that will be relevant for your text, but you still can refer to the described functions and options.
 
@@ -66,33 +62,21 @@ In this tutorial, we will use a list of words and numbers as mock data. You can 
 1. Introduce a local variable `pattern` with the keyword `val`. 
 2. Assign the `actual` value to this variable.
 
-   <div class="sample" markdown="1" theme="idea">
-
    ```kotlin
-   val pattern = "actual"
+   val pattern = "\b[1-9][0-9]{2,4}\b"
    ```
-   
-   </div>
 
 3. Now, your pattern is just a text string. To make it into a regular expression, assign the `Regex` type to the value.
 
-   <div class="sample" markdown="1" theme="idea">
-
    ```kotlin
-   val pattern = Regex("actual")
+   val pattern = Regex("\b[1-9][0-9]{2,4}\b")
    ```
-   
-   </div>
 
 In this example, we added the `Regex` type to the value. Alternatively, you can use the `toRegex` function.
 
-   <div class="sample" markdown="1" theme="idea">
-
    ```kotlin
-   val pattern = "actual".toRegex()
+   val pattern = "\b[1-9][0-9]{2,4}\b".toRegex()
    ```
-   
-   </div>
 
 ## Search with a regular expression
 
