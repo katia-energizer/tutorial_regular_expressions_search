@@ -42,7 +42,7 @@ Basic regular expressions consist of a single literal character or a sequence of
 
 More complex regular expressions include special characters. 
 * `\s` matches the first occurrence of the white space character in your text.
-* `\b[1-9][0-9]{2}\b` matches the first occurrence of the number between 100 and 99999 in your text.
+* `\b[1-9][0-9]{2}\b` matches the first occurrence of the number between 100 and 999 in your text.
 
 You can combine literal and special characters to create complex patterns. For the full information about available syntax, refer to the [Pattern syntax reference for JVM](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html).
 
