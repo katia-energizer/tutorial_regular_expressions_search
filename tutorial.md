@@ -22,7 +22,7 @@ You will learn about five search functions:
 | **Function** | **Description**  |
 |---------------|------------------|
 | [`containsMatchIn`](#containsMatchIn)| Finds out does the text contain any matches. |
-| [`find`](#find)                      | Finds the first match. |
+| [`find`](#find-—-finds-the-first-match)                      | Finds the first match. |
 | [`findAll`](#findAll)                | Finds all matches. |
 | [`matchEntire`](#matchEntire)        | Finds out does the regular expression matches the whole text. Returns a Booolean value. |
 | [`matches`](#matches)                | Finds out does the regular expression matches the whole text. Returns a parameter. |
