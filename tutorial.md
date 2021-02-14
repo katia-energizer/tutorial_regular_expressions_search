@@ -119,8 +119,11 @@ Define if the pattern has a match in the text.
 ```kotlin
 fun main(args: Array<String>) {
 
-val result1 = pattern.containsMatchIn(text)
-println("The containsMatchIn function returns $result1.") //true
+   val text = "Actomyosin, actor, 123.5, actress, 505, actual, actually, actuary"
+   val pattern = Regex("actual")
+   val result1 = pattern.containsMatchIn(text)
+   
+   println("The containsMatchIn function returns $result1.") //true
 
 }
 ```
