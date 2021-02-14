@@ -49,7 +49,7 @@ You can combine literal and special characters to create complex patterns. For t
 ### Define the text you plan to search in
 
 1. Introduce a local variable `text` with the keyword `val`. 
-2. Assign the following value to the `text` variable: Actomyosin, actor, 123.5, actress, 505, actual, actually, actuary.
+2. Assign the following value to the `text` variable: Actomyosin, 99, actor, 123, actress, 808, actual, 5005, actually, actuary.
 
    ```kotlin
    val text = "Actomyosin, 99, actor, 123, actress, 808, actual, 5005, actually, actuary"
@@ -69,7 +69,7 @@ You can combine literal and special characters to create complex patterns. For t
 
 With this regular expression, you can search for numbers between 100 and 999.
 
-3. Add extra backslash before each `\b` part of the regular expression. `\b` is a metacharacter with a special meaning: it matches a number boundary. You must use `\` as an escape character before metacharacters. Otherwise metacharacters will be read by compiler literally without any special meanings. 
+3. Add an extra backslash before each `\b` part of the regular expression. `\b` is a metacharacter with a special meaning: it matches a number boundary. You must use `\` as an escape character before metacharacters. Otherwise metacharacters will be read by compiler literally without any special meanings. 
 
    ```kotlin
    val pattern = "\\b[1-9][0-9]{2}\\b"
@@ -124,8 +124,8 @@ Define if the pattern has a match in the text.
 ```kotlin
 fun main() {
 
-   val text = "Actomyosin, actor, 123, actress, 505, actual, actually, actuary"
-   val pattern = Regex("\b[1-9][0-9]{2,4}\b")
+   val text = "Actomyosin, 99, actor, 123, actress, 808, actual, 5005, actually, actuary"
+   val pattern = Regex("\\b[1-9][0-9]{2}\\b")
    val result1 = pattern.containsMatchIn(text)
    
    println("The containsMatchIn function returns $result1.") //true
@@ -154,18 +154,18 @@ Find the first match of the pattern in the text.
    * `pattern` is a variable for the search pattern.
    * `find` is a search function.
    * `text` is a variable for the text where we are searching for matches.
-
-3. Use the `println` function to display the result of the `result2` variable. Use the `range` function to get a range of indexes in the text string. 
-4. If the pattern does not have matches in the text, the `find` function returns `null`. To allow the `range` function to return `null`, add a question mark `?` after the `result2` variable name. For information about the danger of null references, refer to [Null Safety](https://kotlinlang.org/docs/reference/null-safety.html).
+   
+3. Use the `println` function to display the result of the `result2` variable. Use the `value` function to get the first number that matches the regular expression. 
+4. If the pattern does not have matches in the text, the `find` function returns `null`. To allow the `value` function to return `null`, add a question mark `?` after the `result2` variable name. For information about the danger of null references, refer to [Null Safety](https://kotlinlang.org/docs/reference/null-safety.html).
 
 ```kotlin
 fun main() {
 
-   val text = "Actomyosin, actor, 123, actress, 505, actual, actually, actuary"
-   val pattern = Regex("\b[1-9][0-9]{2,4}\b")
+   val text = "Actomyosin, 99, actor, 123, actress, 808, actual, 5005, actually, actuary"
+   val pattern = Regex("\\b[1-9][0-9]{2}\\b")
    val result2 = pattern.find(text)
    
-   println("The find function returns $result2?.range.") //19..21
+   println("The find function returns ${result2?.value}.") //123
    
 }
  ```
