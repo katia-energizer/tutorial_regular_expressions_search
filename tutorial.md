@@ -10,13 +10,12 @@ showAuthorInfo: false
 
 This tutorial demonstrates how to write patterns with regular expressions and use these patterns for searching in a text.
 
-You will create a regular expression, write search functions using this regular expression, and add an additional option to update your search functions.
+You will create a regular expression and write search functions using this regular expression.
 
-This tutorial consists of three parts:
+This tutorial consists of two parts:
 
 * [Create a regular expression](#Create-a-regular-expression)
 * [Search with regular expressions](#Search-with-a-regular-expression)
-* [Add an option to a regular expression](#Add-an-option-to-a-regular-expression)
 
 You will learn about five search functions:
 
@@ -27,14 +26,6 @@ You will learn about five search functions:
 | [`findAll`](#findAll)                | Finds all matches. |
 | [`matchEntire`](#matchEntire)        | Finds out does the regular expression matches the whole text. Returns a Booolean value. |
 | [`matches`](#matches)                | Finds out does the regular expression matches the whole text. Returns a parameter. |
-
-You will also learn about three options:
-
-| **Option** | **Description**  |
-|---------------|------------------|
-| [`IGNORE_CASE`](#)| Ignores character case when searching for matches. |
-| [`COMMENTS`](#)   | XXX |
-| [`LITERAL`](#)    | XXX |
 
 To get started, you need to create an application [using Intellij IDEA](https://kotlinlang.org/docs/tutorials/jvm-get-started.html) or another IDE with the Kotlin Programming Language support. 
 
@@ -58,7 +49,7 @@ You can combine literal and special characters to create complex patterns. For t
 ### Define the text you plan to search in
 
 1. Introduce a local variable `text` with the keyword `val`. 
-2. Paste the following value to the `text` variable: Actomyosin, actor, 123.5, actress, 505, actual, actually, actuary.
+2. Assign the following value to the `text` variable: Actomyosin, actor, 123.5, actress, 505, actual, actually, actuary.
 
    <div class="sample" markdown="1" theme="idea">
 
@@ -209,8 +200,6 @@ Find all pattern matches in the text.
 
 3. The result of the `findAll` function is a sequence of values. Use the `forEach` function to display the result as a column of values. For information about this function, refer to the [`forEach` function reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/for-each.html).
 
-   <div class="sample" markdown="1" theme="idea">
-
    ```kotlin
    val result3 = pattern.findAll(text)
    result3.forEach { match ->
@@ -218,8 +207,6 @@ Find all pattern matches in the text.
       println("$indexes")
    }
    ```
-   
-   </div>
 
 4. To run your application, click the green **Run** icon in the gutter and select **Run 'MainKt'**.
 
@@ -248,14 +235,10 @@ Define if the pattern matches the entire text.
 3. Use the `println` function to display the result of the `result4` variable. Use the `range` function to get a range of indexes in the text string. 
 4. If the pattern does not have matches in the text, the `matchEntire` function returns `null`. To allow the `range` function to return `null`, add the question mark `?` after the `result4` variable name. For information about the danger of null references, refer to [Null Safety](https://kotlinlang.org/docs/reference/null-safety.html).
 
-   <div class="sample" markdown="1" theme="idea">
-
    ```kotlin
    val result4 = pattern.matchEntire(text)
    println(result4?.range)
    ```
-   
-   </div>
 
 5. To run your application, click the green **Run** icon in the gutter and select **Run 'MainKt'**.
 
@@ -281,52 +264,14 @@ Define if the pattern matches the entire text.
 
 3. Use the `println` function to display the result of the `result5` variable.
 
-   <div class="sample" markdown="1" theme="idea">
-
    ```kotlin
     val result5 = pattern.matches(text)
     println(result5)
     ```
     
-    </div>
-    
 4. To run your application, click the green **Run** icon in the gutter and select **Run 'MainKt'**.
 
 The pattern does not match the text, so the function returns the `false` value.
-
-## Add an option to a regular expression
-
-You can use special options with the regular expression. 
-
-In this tutorial, you will learn how to ignore character case when searching for matches using the `IGNORE_CASE` option. 
-
-You can find the full list of options in the [`RegexOption` type reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex-option/).
-
-Modify the regular expression and add an option to it.
-
-1. Modify the value of the `pattern` variable from `actual` to `Actual`.
-
-   <div class="sample" markdown="1" theme="idea">
-
-   ```kotlin
-   val pattern = Regex("Actual")
-   ```
-   
-   </div>
-
-2. Click the green **Run** icon in the gutter and select **Run 'MainKt'** to re-run your application.
-3. Check results. They have changed. For example, the `find` function result is `false` now. In Kotlin, `Actual` does not equal `actual`, so there are no matches in the text. 
-4. Add the `IGNORE_CASE` option to the `pattern` variable to enable case-insensitive matching:
-
-   <div class="sample" markdown="1" theme="idea">
-
-   ```kotlin
-   val pattern = Regex("Actual", RegexOption.IGNORE_CASE)
-   ```
-   
-   </div>
-
-5. Click the green **Run** icon in the gutter and select **Run 'MainKt'** to re-run your application. Results for `actual` and `Actual` patterns are the same now.
 
 ## What's next?
 
