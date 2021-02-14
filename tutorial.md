@@ -8,6 +8,25 @@ date: 2021-02-03
 showAuthorInfo: false
 ---
 
+This tutorial demonstrates how to write patterns with regular expressions and use these patterns for searching in a text.
+
+You will create a regular expression, write search functions using this regular expression, and add an additional option to update your search functions.
+
+This tutorial consists of three parts:
+
+* [Create a regular expression](## Create a regular expression)
+* [Search with regular expressions](## Search with a regular expression)
+* [Add an option to a regular expression](## Add an option to a regular expression)
+
+In the [Search with regular expressions] part, you will learn how to:
+
+* [Find out does the text contain any matches of your regular expression](#containsMatchIn)
+* [Find the first regular expression match in the text](#find)
+* [Find all regular expression matches in the text](#findAll)
+* Learn if your regular expression matches the text; depending on a applied function, you can get a [Booolean value](#matchEntire) or a [certain match parameter](#matches)
+
+In the [Add an option to a regular expression](## Add an option to a regular expression) part, you will learn how to ignore character case when searching for matches.
+
 To get started, you need to create an application [using Intellij IDEA](https://kotlinlang.org/docs/tutorials/jvm-get-started.html) or another IDE with the Kotlin Programming Language support. 
 
 ## Create a regular expression
