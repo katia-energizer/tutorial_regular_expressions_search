@@ -55,23 +55,28 @@ You can combine literal and special characters to create complex patterns. For t
    val text = "Actomyosin, actor, 123, actress, 505, actual, actually, actuary"
    ```
 
+>
 In this tutorial, we will use a list of words and numbers as mock data. You can also use the text of your choice. In this case, you will need to configure a search pattern that will be relevant for your text, but you still can refer to the described functions and options.
+>
 
 ### Define the pattern to search with
 
 1. Introduce a local variable `pattern` with the keyword `val`. 
-2. Assign the `actual` value to this variable.
+2. Assign the `\b[1-9][0-9]{2,4}\b` value to this variable.
 
    ```kotlin
    val pattern = "\b[1-9][0-9]{2,4}\b"
    ```
-3.
 
-> This tutorial is a continuation of the previous tutorial – [Create a RESTful web service with Spring Boot](jvm-spring-boot-restful.md). Complete the previous tutorial before proceeding with this one.
->
-{type="note"}
+This regular expression will match numbers in your text.
 
-3. Now, your pattern is just a text string. To make it into a regular expression, assign the `Regex` type to the value.
+3. Add extra backslash before each `\b` part of the regular expression. `\b` is a metacharacter with a special meaning: it matches a number boundary. You must use `\` as an escape character before metacharacters. Otherwise metacharacters will be read by compiler literally without any special meanings. 
+
+   ```kotlin
+   val pattern = "\\b[1-9][0-9]{2,4}\\b"
+   ```
+
+3. For now, your pattern is just a text string. To make it into a regular expression, assign the `Regex` type to the value.
 
    ```kotlin
    val pattern = Regex("\\b[1-9][0-9]{2,4}\\b")
@@ -82,6 +87,10 @@ In this example, we added the `Regex` type to the value. Alternatively, you can 
    ```kotlin
    val pattern = "\\b[1-9][0-9]{2,4}\\b".toRegex()
    ```
+
+>
+In this tutorial, we will search for numbers. You can also create a regular expression of your choice. In this case, you will need to have a relevant text for your regular expression, but you still can refer to the described functions and options.
+>
 
 ## Search with a regular expression
 
