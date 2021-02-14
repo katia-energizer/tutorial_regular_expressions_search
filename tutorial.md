@@ -122,9 +122,9 @@ Define if the pattern has a match in the text.
    ```
 
    where:
-   * `pattern` is a variable for the search pattern.
-   * `containsMatchIn` is a search function.
-   * `text` is a variable for the text where we are searching for matches.
+   * `pattern` is a variable for the search pattern
+   * `containsMatchIn` is a search function
+   * `text` is a variable for the text where we are searching for matches
 
 3. Use the `println` function to display the result of the `result1` variable.
 
@@ -163,9 +163,9 @@ Find the first match of the pattern in the text.
    ```
 
    where:
-   * `pattern` is a variable for the search pattern.
-   * `find` is a search function.
-   * `text` is a variable for the text where we are searching for matches.
+   * `pattern` is a variable for the search pattern
+   * `find` is a search function
+   * `text` is a variable for the text where we are searching for matches
    
 3. Use the `println` function to display the result of the `result2` variable and the `value` function to get the first number that matches the regular expression. 
 
@@ -208,9 +208,9 @@ Find all pattern matches in the text.
    ```
 
    where:
-   * `pattern` is a variable for the search pattern.
-   * `findAll` is a search function.
-   * `text` is a variable for the text where we are searching for matches.
+   * `pattern` is a variable for the search pattern
+   * `findAll` is a search function
+   * `text` is a variable for the text where we are searching for matches
 
 3. Use the `println` function to display the text presenting results of the `result3` variable.
 
@@ -261,9 +261,9 @@ Define if the pattern matches the entire text.
    ```
 
    where:
-   * `pattern` is a variable for the search pattern.
-   * `matchEntire` is a search function.
-   * `text` is a variable for the text where we are searching for matches.
+   * `pattern` is a variable for the search pattern
+   * `matchEntire` is a search function
+   * `text` is a variable for the text where we are searching for matches
 
 3. Use the `println` function to display the result of the `result4` variable. Use the `value` function to get a range of indexes in the text string. 
 
@@ -304,9 +304,9 @@ Define if the pattern matches the entire text.
    ```
 
    where:
-   * `pattern` is a variable for the search pattern.
-   * `matches` is a search function.
-   * `text` is a variable for the text where we are searching for matches.
+   * `pattern` is a variable for the search pattern
+   * `matches` is a search function
+   * `text` is a variable for the text where we are searching for matches
 
 3. Use the `println` function to display the result of the `result5` variable.
 
