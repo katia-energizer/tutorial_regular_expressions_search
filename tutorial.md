@@ -25,7 +25,7 @@ More complex regular expressions include special characters.
 * `\s` matches the first occurrence of the white space character in your text.
 * `\b[1-9][0-9]{2,4}\b` matches the first occurrence of the number between 100 and 99999 in your text.
 
-You can combine literal and special characters to create complex patterns. For the full information about available syntax, refer to [the Pattern syntax reference for JVM](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html).
+You can combine literal and special characters to create complex patterns. For the full information about available syntax, refer to the [Pattern syntax reference for JVM](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html).
 
 ### Define the text you plan to search in
 
@@ -87,7 +87,7 @@ The presence of the `Regex` type allows the compiler to use the following functi
 
 The `Regex` type also allows to use special [options](#user-content-add-an-option-to-a-regular-expression) with regular expressions.
 
-Note that the list above is not the full list of functions that are provided by the `Regex` type. For the full list, refer to [the Regex type reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex/#kotlin.text.Regex).
+Note that the list above is not the full list of functions that are provided by the `Regex` type. For the full list, refer to the [Regex type reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex/#kotlin.text.Regex).
 
 
 ### containsMatchIn
@@ -158,7 +158,7 @@ Find the first match of the pattern in the text.
 
 The pattern is available in the text, so the `find` function returns the `40..45` range of indexes.
 
-For information about function parameters and exceptions, refer to [the find function reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex/find.html). 
+For information about function parameters and exceptions, refer to the [find function reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex/find.html). 
 
 ### findAll
 
@@ -178,7 +178,7 @@ Find all pattern matches in the text.
    * `findAll` is a search function.
    * `text` is a variable for the text where we are searching for matches.
 
-3. The result of the `findAll` function is a sequence of values. Use the `forEach` function to display the result as a column of values. For information about this function, refer to [the forEach function reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/for-each.html).
+3. The result of the `findAll` function is a sequence of values. Use the `forEach` function to display the result as a column of values. For information about this function, refer to the [forEach function reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/for-each.html).
 
    <div class="sample" markdown="1" theme="idea">
 
@@ -196,7 +196,7 @@ Find all pattern matches in the text.
 
 The pattern has two matches in the text: `actual` and `actual` in `actually`, so the `findAll` function returns 2 values: `40..45` and `48..53`.
 
-For information about function parameters and exceptions, refer to [the findAll function reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex/find-all.html).
+For information about function parameters and exceptions, refer to the [findAll function reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex/find-all.html).
 
 ### matchEntire
 
@@ -269,7 +269,7 @@ The pattern does not match the text, so the function returns the `false` value.
 
 You can use special options with the regular expression.
 
-In this tutorial, we will cover the `IGNORE_CASE` option. For information about other options, refer to [the RegexOption type reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex-option/).
+In this tutorial, we will cover the `IGNORE_CASE` option. For information about other options, refer to the [RegexOption type reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex-option/).
 
 Modify the regular expression and add an option to it.
 
