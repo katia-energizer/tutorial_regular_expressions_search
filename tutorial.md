@@ -155,7 +155,7 @@ Find the first match of the pattern in the text.
    * `find` is a search function.
    * `text` is a variable for the text where we are searching for matches.
    
-3. Use the `println` function to display the result of the `result2` variable. Use the `value` function to get the first number that matches the regular expression. 
+3. Use the `println` function to display the result of the `result2` variable and the `value` function to get the first number that matches the regular expression. 
 4. If the pattern does not have matches in the text, the `find` function returns `null`. To allow the `value` function to return `null`, add a question mark `?` after the `result2` variable name. For information about the danger of null references, refer to [Null Safety](https://kotlinlang.org/docs/reference/null-safety.html).
 
 ```kotlin
@@ -194,16 +194,25 @@ Find all pattern matches in the text.
    * `findAll` is a search function.
    * `text` is a variable for the text where we are searching for matches.
 
-3. The result of the `findAll` function is a sequence of values. Use the `forEach` function to display the result as a column of values. For information about this function, refer to the [`forEach` function reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/for-each.html).
+3. Use the `println` function to display the text presenting results of the `result3` variable.
+
+   ```
+    println("The findAll function returns")
+   ```
+   
+4. The result of the `findAll` function is a sequence of values. Use the `value` function to get the list of numbers that match the regular expression and the `forEach` function to display the result as a column of values. For information about this function, refer to the [`forEach` function reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/for-each.html).
 
 ```kotlin
 fun main() {
 
-    val text = "Actomyosin, actor, 123.5, actress, 505, actual, actually, actuary"
-    val just_string = "actual"
-   val pattern = Regex("\\b[1-9][0-9]{2,4}\\b")
-   
-   println("$indexes")
+    val text = "Actomyosin, 99, actor, 123, actress, 808, actual, 5005, actually, actuary"
+    val pattern = Regex("\\b[1-9][0-9]{2}\\b")
+    val result3 = pattern.findAll(text)
+    println("The findAll function returns")
+    result3.forEach { match ->
+      val values = match.value
+      println(values) //123, 808
+   }
    
 }
 ```
