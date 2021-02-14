@@ -135,9 +135,9 @@ The pattern has matches in the text, so the `containsMatchIn` function returns t
 fun main(args: Array<String>) {
 
 val result1 = pattern.containsMatchIn(text)
-println("result1 is $result1") //true
+println("the `containsMatchIn` function returns $result1") //true
 
-]
+}
    ```
    
    </div>
