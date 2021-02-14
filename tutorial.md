@@ -24,8 +24,8 @@ You will learn about five search functions:
 | [`containsMatchIn`](#containsMatchIn--finds-out-does-the-text-contain-any-matches)| Finds out does the text contain any matches. |
 | [`find`](#find--finds-the-first-match)                                            | Finds the first match. |
 | [`findAll`](#findAll--finds-all-matches)                                          | Finds all matches. |
-| [`matchEntire`](#matchEntire--finds-out-does-the-regular-expression-match-the-whole-text;-returns-a-Booolean-value) | Finds out does the regular expression match the whole text. Returns a Booolean value. |
-| [`matches`](#matches--finds-out-does-the-regular-expression-match-the-whole-text;-returns-a-parameter) | Finds out does the regular expression match the whole text. Returns a parameter. |
+| [`matchEntire`](#matchEntire--finds-out-does-the-regular-expression-match-the-whole-text-returns-a-Booolean-value) | Finds out does the regular expression match the whole text. Returns a Booolean value. |
+| [`matches`](#matches--finds-out-does-the-regular-expression-match-the-whole-text-returns-a-parameter) | Finds out does the regular expression match the whole text. Returns a parameter. |
 
 To get started, you need to create an application [using Intellij IDEA](https://kotlinlang.org/docs/tutorials/jvm-get-started.html) or another IDE with the Kotlin Programming Language support. 
 
