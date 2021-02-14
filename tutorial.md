@@ -117,7 +117,7 @@ Define if the pattern has a match in the text.
 3. Use the `println` function to display the result of the `result1` variable.
 
 ```kotlin
-fun main(args: Array<String>) {
+fun main() {
 
    val text = "Actomyosin, actor, 123.5, actress, 505, actual, actually, actuary"
    val pattern = Regex("actual")
@@ -154,7 +154,7 @@ Find the first match of the pattern in the text.
 4. If the pattern does not have matches in the text, the `find` function returns `null`. To allow the `range` function to return `null`, add a question mark `?` after the `result2` variable name. For information about the danger of null references, refer to [Null Safety](https://kotlinlang.org/docs/reference/null-safety.html).
 
 ```kotlin
-fun main(args: Array<String>) {
+fun main() {
 
    val text = "Actomyosin, actor, 123.5, actress, 505, actual, actually, actuary"
    val pattern = Regex("actual")
