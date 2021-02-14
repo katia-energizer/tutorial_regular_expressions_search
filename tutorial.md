@@ -85,7 +85,7 @@ In this part, you will learn how to:
 * Find out does the text contain any matches of your regular expression ([`containsMatchIn`](#containsMatchIn--finds-out-does-the-text-contain-any-matches))
 * Find the first regular expression match in the text ([`find`](#find--finds-the-first-match))
 * Find all regular expression matches in the text ([`findAll`](#findAll--finds-all-matches))
-* Find out does your regular expression match the whole text; depending on a applied function, you can get a Booolean value ([`matchEntire`](#matchEntire--finds-out-does-the-regular-expression-match-the-whole-text-returns-a-Booolean-value)) or a certain match parameter ([`matches`](#matches--finds-out-does-the-regular-expression-match-the-whole-text-returns-a-parameter)).
+* Find out does your regular expression match the whole text; depending on a applied function, you can get a Boolean value ([`matchEntire`](#matchEntire--finds-out-does-the-regular-expression-match-the-whole-text-returns-a-Booolean-value)) or a certain match parameter ([`matches`](#matches--finds-out-does-the-regular-expression-match-the-whole-text-returns-a-parameter)).
 
 You can find the full list of functions in the [`Regex` type reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex/#kotlin.text.Regex).
 
