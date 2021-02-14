@@ -42,7 +42,7 @@ Basic regular expressions consist of a single literal character or a sequence of
 
 More complex regular expressions include special characters. 
 * `\s` matches the first occurrence of the white space character in your text.
-* `\b[1-9][0-9]{2,4}\b` matches the first occurrence of the number between 100 and 99999 in your text.
+* `\b[1-9][0-9]{2}\b` matches the first occurrence of the number between 100 and 99999 in your text.
 
 You can combine literal and special characters to create complex patterns. For the full information about available syntax, refer to the [Pattern syntax reference for JVM](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html).
 
@@ -52,7 +52,7 @@ You can combine literal and special characters to create complex patterns. For t
 2. Assign the following value to the `text` variable: Actomyosin, actor, 123.5, actress, 505, actual, actually, actuary.
 
    ```kotlin
-   val text = "Actomyosin, actor, 123, actress, 505, actual, actually, actuary"
+   val text = "Actomyosin, 99, actor, 123, actress, 808, actual, 5005, actually, actuary"
    ```
 
 >
@@ -62,30 +62,30 @@ In this tutorial, we will use a list of words and numbers as mock data. You can 
 ### Define the pattern to search with
 
 1. Introduce a local variable `pattern` with the keyword `val`. 
-2. Assign the `\b[1-9][0-9]{2,4}\b` value to this variable.
+2. Assign the `\b[1-9][0-9]{2}\b` value to this variable.
 
    ```kotlin
-   val pattern = "\b[1-9][0-9]{2,4}\b"
+   val pattern = "\b[1-9][0-9]{2}\b"
    ```
 
-This regular expression will match numbers in your text.
+With this regular expression, you can search for numbers between 100 and 999.
 
 3. Add extra backslash before each `\b` part of the regular expression. `\b` is a metacharacter with a special meaning: it matches a number boundary. You must use `\` as an escape character before metacharacters. Otherwise metacharacters will be read by compiler literally without any special meanings. 
 
    ```kotlin
-   val pattern = "\\b[1-9][0-9]{2,4}\\b"
+   val pattern = "\\b[1-9][0-9]{2}\\b"
    ```
 
 3. For now, your pattern is just a text string. To make it into a regular expression, assign the `Regex` type to the value.
 
    ```kotlin
-   val pattern = Regex("\\b[1-9][0-9]{2,4}\\b")
+   val pattern = Regex("\\b[1-9][0-9]{2}\\b")
    ```
 
 In this example, we added the `Regex` type to the value. Alternatively, you can use the `toRegex` function.
 
    ```kotlin
-   val pattern = "\\b[1-9][0-9]{2,4}\\b".toRegex()
+   val pattern = "\\b[1-9][0-9]{2}\\b".toRegex()
    ```
 
 >
