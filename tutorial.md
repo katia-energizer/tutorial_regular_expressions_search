@@ -27,7 +27,7 @@ This tutorial consists of two parts:
 
 To get started, you need to create an application [using Intellij IDEA](https://kotlinlang.org/docs/tutorials/jvm-get-started.html) or another IDE with the Kotlin Programming Language support. 
 
-## Create a search pattern with a regular expression
+## Create a pattern with a regular expression
 
 There may be times when you need to use [regular expressions](https://www.regular-expressions.info/quickstart.html).
 
