@@ -23,7 +23,7 @@ This tutorial consists of two parts:
    | [`find`](#find--finds-the-first-match)                                            | Finds the first match. |
    | [`findAll`](#findAll--finds-all-matches)                                          | Finds all matches. |
    | [`matchEntire`](#matchentire--finds-out-if-the-pattern-matches-the-whole-text-returns-a-match-parameter) | Finds out if the pattern matches the whole text. Returns a match parameter. |
-   | [`matches`](#matches--finds-out-if-the-pattern-matches-the-whole-text-returns-a-Booolean-value) | Finds out if the pattern matches the whole text. Returns a Booolean value. |
+   | [`matches`](#matches--finds-out-if-the-pattern-matches-the-whole-text-returns-a-Boolean-value) | Finds out if the pattern matches the whole text. Returns a Boolean value. |
 
 To get started, you need to create an application [using Intellij IDEA](https://kotlinlang.org/docs/tutorials/jvm-get-started.html) or another IDE with the Kotlin Programming Language support. 
 
@@ -97,7 +97,7 @@ In this part, you will learn how to:
 * Find out if the text contains any matches of your pattern ([`containsMatchIn`](#containsMatchIn--finds-out-if-the-text-contains-any-matches))
 * Find the first pattern match in the text ([`find`](#find--finds-the-first-match))
 * Find all pattern matches in the text ([`findAll`](#findAll--finds-all-matches))
-* Find out if your pattern matches the whole text; depending on the applied function, you can get a match parameter ([`matchEntire`](#matchentire--finds-out-if-the-pattern-matches-the-whole-text-returns-a-match-parameter)) or a Boolean value ([`matches`](#matches--finds-out-if-the-pattern-matches-the-whole-text-returns-a-booolean-value)).
+* Find out if your pattern matches the whole text; depending on the applied function, you can get a match parameter ([`matchEntire`](#matchentire--finds-out-if-the-pattern-matches-the-whole-text-returns-a-match-parameter)) or a Boolean value ([`matches`](#matches--finds-out-if-the-pattern-matches-the-whole-text-returns-a-boolean-value)).
 
 You can find the full list of functions provided by the `Regex` type in the [reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex/#kotlin.text.Regex).
 
@@ -311,7 +311,7 @@ Define if the pattern matches the entire text.
 
 The pattern does not match the text, so the function returns `null`.
 
-### matches — finds out if the pattern matches the whole text; returns a Booolean value
+### matches — finds out if the pattern matches the whole text; returns a Boolean value
 
 The `matches` function indicates whether the regular expression matches the entire text string. 
 
