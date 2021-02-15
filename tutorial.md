@@ -69,7 +69,7 @@ You can combine literal and special characters to create complex patterns. For t
 
 3. Add an extra backslash before each `\b` part of the regular expression. 
 
-   `\b` is a metacharacter with a special meaning. This metacharacter matches a number boundary. You must use `\` as an escape character before metacharacters. Otherwise, the compiler will ignore the special meaning of metacharacters. 
+   `\b` is a metacharacter with a special meaning. This metacharacter matches a boundary. It allows to search for whole words or whole numbers. You must use `\` as an escape character before metacharacters. Otherwise, the compiler will ignore the special meaning of metacharacters. 
 
    ```kotlin
    val pattern = "\\b[1-9][0-9]{2}\\b"
