@@ -71,7 +71,7 @@ With this regular expression, you can search for numbers between 100 and 999.
 
 3. Add an extra backslash before each `\b` part of the regular expression. 
 
-   `\b` is a metacharacter with a special meaning. This metacharacter matches a number boundary. You must use `\` as an escape character before metacharacters. Otherwise, the compiler will        ignore special meanings of metacharacters. 
+   `\b` is a metacharacter with a special meaning. This metacharacter matches a number boundary. You must use `\` as an escape character before metacharacters. Otherwise, the compiler will ignore the special meaning of metacharacters. 
 
    ```kotlin
    val pattern = "\\b[1-9][0-9]{2}\\b"
@@ -259,7 +259,7 @@ Find all pattern matches in the text.
 
 6. To run your application, click the green **Run** icon in the gutter and select **Run 'MainKt'**.
 
-The pattern has twp matches in the text: `123` and `808`, so the `findAll` function returns 2 values.
+The pattern has two matches in the text: `123` and `808`, so the `findAll` function returns 2 values.
 
 For information about function parameters and exceptions, refer to the [`findAll` function reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex/find-all.html).
 
