@@ -21,7 +21,7 @@ This tutorial consists of two parts:
    |---------------|------------------|
    | [`containsMatchIn`](#containsMatchIn--finds-out-if-the-text-contains-any-matches)| Finds out if the text contains any matches. Returns a Boolean value. |
    | [`find`](#find--finds-the-first-match)                                            | Finds the first match. Returns a match parameter. |
-   | [`findAll`](#findAll--finds-all-matches)                                          | Finds all matches. Returns parameters of matches. |
+   | [`findAll`](#findAll--finds-all-matches)                                          | Finds all matches. Returns a parameter for each match. |
    | [`matchEntire`](#matchentire--finds-out-if-the-pattern-matches-the-whole-text-returns-a-match-parameter) | Finds out if the pattern matches the whole text. Returns a match parameter. |
    | [`matches`](#matches--finds-out-if-the-pattern-matches-the-whole-text-returns-a-Boolean-value) | Finds out if the pattern matches the whole text. Returns a Boolean value. |
 
