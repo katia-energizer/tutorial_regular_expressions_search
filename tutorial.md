@@ -157,13 +157,20 @@ The `find` function returns the first match of a regular expression in the text.
 
 Find the first match of the pattern in the text.
 
-1. Introduce a local variable `result2` with the keyword `val`. 
+1. Define your [text](#define-the-text-you-plan-to-search-in) and [search pattern](#define-the-pattern-to-search-with) as local variables.
+
+   ```
+   val text = "Actomyosin, 99, actor, 123, actress, 808, actual, 5005, actually, actuary"
+   val pattern = Regex("\\b[1-9][0-9]{2}\\b")
+   ```
+
+2. Introduce a local variable `result2` with the keyword `val`. 
 
    ```
    val result2
    ```
 
-2. Assign the following value to the `result2` variable: 
+3. Assign the following value to the `result2` variable: 
  
    ```
    pattern.find(text)
@@ -174,7 +181,7 @@ Find the first match of the pattern in the text.
    * `find` is a search function
    * `text` is a variable for the text where we are searching for matches
    
-3. Use the `println` function to display the result of the `result2` variable and the `value` function to get the first number that matches the regular expression. 
+4. Use the `println` function to display the result of the `result2` variable and the `value` function to get the first number that matches the regular expression. 
 
    If the pattern does not have matches in the text, the `find` function returns `null`. To allow the `value` function to return `null`, add a question mark `?` after the          `result2` variable name. For information about the danger of null references, refer to [Null Safety](https://kotlinlang.org/docs/reference/null-safety.html).
 
@@ -202,13 +209,20 @@ The `findAll` returns all matches of the regular expression in your text.
 
 Find all pattern matches in the text.
 
-1. Introduce a local variable `result3` with the keyword `val`.
+1. Define your [text](#define-the-text-you-plan-to-search-in) and [search pattern](#define-the-pattern-to-search-with) as local variables.
+
+   ```
+   val text = "Actomyosin, 99, actor, 123, actress, 808, actual, 5005, actually, actuary"
+   val pattern = Regex("\\b[1-9][0-9]{2}\\b")
+   ```
+
+2. Introduce a local variable `result3` with the keyword `val`.
 
    ```
    val result 3
    ```
 
-2. Assign the following value to the `result3` variable:
+3. Assign the following value to the `result3` variable:
 
    ```
    pattern.findAll(text)
@@ -219,13 +233,13 @@ Find all pattern matches in the text.
    * `findAll` is a search function
    * `text` is a variable for the text where we are searching for matches
 
-3. Use the `println` function to display the text presenting results of the `result3` variable.
+4. Use the `println` function to display the text presenting results of the `result3` variable.
 
    ```
     println("The findAll function returns")
    ```
    
-4. The result of the `findAll` function is a sequence of values. Use the `value` function to get the list of numbers that match the regular expression and the `forEach` function to display the result as a column of values. For information about this function, refer to the [`forEach` function reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/for-each.html).
+5. The result of the `findAll` function is a sequence of values. Use the `value` function to get the list of numbers that match the regular expression and the `forEach` function to display the result as a column of values. For information about this function, refer to the [`forEach` function reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/for-each.html).
 
    ```kotlin
    fun main() {
@@ -243,7 +257,7 @@ Find all pattern matches in the text.
    }
    ```
 
-4. To run your application, click the green **Run** icon in the gutter and select **Run 'MainKt'**.
+6. To run your application, click the green **Run** icon in the gutter and select **Run 'MainKt'**.
 
 The pattern has twp matches in the text: `123` and `808`, so the `findAll` function returns 2 values.
 
@@ -255,13 +269,20 @@ The `matchEntire` function attempts to match the regular expression against the 
 
 Define if the pattern matches the entire text.
 
-1. Introduce a local variable `result4` with the keyword `val`. 
+1. Define your [text](#define-the-text-you-plan-to-search-in) and [search pattern](#define-the-pattern-to-search-with) as local variables.
+
+   ```
+   val text = "Actomyosin, 99, actor, 123, actress, 808, actual, 5005, actually, actuary"
+   val pattern = Regex("\\b[1-9][0-9]{2}\\b")
+   ```
+
+2. Introduce a local variable `result4` with the keyword `val`. 
 
    ```
    val resul4
    ```
 
-2. Assign the following value to the `result4` variable:
+3. Assign the following value to the `result4` variable:
 
    ```
    pattern.matchEntire(text)
@@ -272,7 +293,7 @@ Define if the pattern matches the entire text.
    * `matchEntire` is a search function
    * `text` is a variable for the text where we are searching for matches
 
-3. Use the `println` function to display the result of the `result4` variable. Use the `value` function to get a range of indexes in the text string. 
+4. Use the `println` function to display the result of the `result4` variable. Use the `value` function to get a range of indexes in the text string. 
 
    If the pattern does not have matches in the text, the `matchEntire` function returns `null`. To allow the `range` function to return `null`, add the question mark `?` after    the `result4` variable name. For information about the danger of null references, refer to [Null Safety](https://kotlinlang.org/docs/reference/null-safety.html).
 
@@ -298,13 +319,20 @@ The `matches` function indicates whether the regular expression matches the enti
 
 Define if the pattern matches the entire text.
 
-1. Introduce a local variable `result5` with the keyword `val`.
+1. Define your [text](#define-the-text-you-plan-to-search-in) and [search pattern](#define-the-pattern-to-search-with) as local variables.
+
+   ```
+   val text = "Actomyosin, 99, actor, 123, actress, 808, actual, 5005, actually, actuary"
+   val pattern = Regex("\\b[1-9][0-9]{2}\\b")
+   ```
+
+2. Introduce a local variable `result5` with the keyword `val`.
 
    ```
    val result5
    ```
 
-2. Assign the following value to the `result5` variable:
+3. Assign the following value to the `result5` variable:
 
    ```
    pattern.matches(text)
@@ -315,7 +343,7 @@ Define if the pattern matches the entire text.
    * `matches` is a search function
    * `text` is a variable for the text where we are searching for matches
 
-3. Use the `println` function to display the result of the `result5` variable.
+4. Use the `println` function to display the result of the `result5` variable.
 
    ```kotlin
    fun main() {
@@ -329,7 +357,7 @@ Define if the pattern matches the entire text.
    }
    ```
     
-4. To run your application, click the green **Run** icon in the gutter and select **Run 'MainKt'**.
+5. To run your application, click the green **Run** icon in the gutter and select **Run 'MainKt'**.
 
 The pattern does not match the text, so the function returns the `false` value.
 
