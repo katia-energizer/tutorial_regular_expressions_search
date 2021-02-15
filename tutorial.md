@@ -95,9 +95,8 @@ In this example, we added the `Regex` type to the value. Alternatively, you can 
 In this part, you will learn how to:
 
 * Find out if the text contains any matches of your pattern ([`containsMatchIn`](#containsMatchIn--finds-out-if-the-text-contains-any-matches))
-* Find the first pattern match in the text ([`find`](#find--finds-the-first-match))
-* Find all pattern matches in the text ([`findAll`](#findAll--finds-all-matches))
-* Find out if your pattern matches the whole text; depending on the applied function, you can get a match parameter ([`matchEntire`](#matchentire--finds-out-if-the-pattern-matches-the-whole-text-returns-a-match-parameter)) or a Boolean value ([`matches`](#matches--finds-out-if-the-pattern-matches-the-whole-text-returns-a-boolean-value)).
+* Find pattern matches in the text; depending on the applied function, you can get the first match ([`find`](#find--finds-the-first-match)) or a list of all matches in the text ([`findAll`](#findAll--finds-all-matches))
+* Find out if your pattern matches the whole text; depending on the applied function, you can get a match parameter ([`matchEntire`](#matchentire--finds-out-if-the-pattern-matches-the-whole-text-returns-a-match-parameter)) or a Boolean value ([`matches`](#matches--finds-out-if-the-pattern-matches-the-whole-text-returns-a-boolean-value))
 
 You can find the full list of functions provided by the `Regex` type in the [reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex/#kotlin.text.Regex).
 
