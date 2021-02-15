@@ -109,13 +109,20 @@ The `containsMatchIn` function attempts to can find a match of the regular expre
 
 Define if the pattern has a match in the text.
 
-1. Introduce a local variable `result1` with the keyword `val`.
+1. Define your [text](#define-the-text-you-plan-to-search-in) and [search pattern](#define-the-pattern-to-search-with) as local variables.
+
+   ```
+   val text = "Actomyosin, 99, actor, 123, actress, 808, actual, 5005, actually, actuary"
+   val pattern = Regex("\\b[1-9][0-9]{2}\\b")
+   ```
+
+3. Introduce a local variable `result1` with the keyword `val`.
 
    ```
    val result1
    ```
 
-2. Assign the following value to the `result1` variable:
+4. Assign the following value to the `result1` variable:
 
    ```
    pattern.containsMatchIn(text)
@@ -126,7 +133,7 @@ Define if the pattern has a match in the text.
    * `containsMatchIn` is a search function
    * `text` is a variable for the text where we are searching for matches
 
-3. Use the `println` function to display the result of the `result1` variable.
+5. Use the `println` function to display the result of the `result1` variable.
 
    ```kotlin
    fun main() {
@@ -140,7 +147,7 @@ Define if the pattern has a match in the text.
    }
    ```
    
-4. To run your application, click the green **Run** icon in the gutter and select **Run 'MainKt'**.
+6. To run your application, click the green **Run** icon in the gutter and select **Run 'MainKt'**.
 
 The pattern has matches in the text, so the `containsMatchIn` function returns the `true` value.
 
