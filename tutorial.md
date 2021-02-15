@@ -99,7 +99,7 @@ In this part, you will learn how to:
 * Find all pattern matches in the text ([`findAll`](#findAll--finds-all-matches))
 * Find out if your pattern matches the whole text; depending on the applied function, you can get a match parameter ([`matchEntire`](#matchentire--finds-out-if-the-pattern-matches-the-whole-text-returns-a-match-parameter)) or a Boolean value ([`matches`](#matches--finds-out-if-the-pattern-matches-the-whole-text-returns-a-booolean-value)).
 
-You can find the full list of functions in the [`Regex` type reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex/#kotlin.text.Regex).
+You can find the full list of functions provided by the `Regex` type in the [reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex/#kotlin.text.Regex).
 
 ### containsMatchIn — finds out if the text contains any matches 
 
