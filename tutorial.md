@@ -119,7 +119,7 @@ Define if the pattern has a match in the text.
 3. Introduce a local variable `result1` with the keyword `val`.
 
    ```
-   val result1
+   val result1 =
    ```
 
 4. Assign the following value to the `result1` variable:
