@@ -102,7 +102,7 @@ You can find the full list of functions provided by the `Regex` type in the [ref
 
 ### containsMatchIn — finds out if the text contains any matches 
 
-The `containsMatchIn` function attempts to can find a match of the regular expression in your text.
+The `containsMatchIn` function attempts to find a match of the pattern in your text. Returns a boolean value.
 
 Define if the pattern has a match in the text.
 
@@ -150,7 +150,7 @@ The pattern has matches in the text, so the `containsMatchIn` function returns t
 
 ### find — finds the first match
 
-The `find` function returns the first match of a regular expression in the text. 
+The `find` function returns the parameter of the first pattern match in the text. 
 
 Find the first match of the pattern in the text.
 
@@ -196,13 +196,13 @@ Find the first match of the pattern in the text.
    
 5. To run your application, click the green **Run** icon in the gutter and select **Run 'MainKt'**.
 
-The function returns the first match in the list: `123`.
+The function returns the first match value: `123`.
 
 For information about function parameters and exceptions, refer to the [`find` function reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex/find.html). 
 
 ### findAll — finds all matches
 
-The `findAll` returns all matches of the regular expression in your text. 
+The `findAll` returns parameters of all matches of the pattern in your text. 
 
 Find all pattern matches in the text.
 
@@ -262,7 +262,7 @@ For information about function parameters and exceptions, refer to the [`findAll
 
 ### matchEntire — finds out if the pattern matches the whole text; returns a match parameter
 
-The `matchEntire` function attempts to match the regular expression against the entire text string. 
+The `matchEntire` function attempts to match the pattern against the whole text string. Returns a match parameter.
 
 Define if the pattern matches the entire text.
 
@@ -312,7 +312,7 @@ The pattern does not match the text, so the function returns `null`.
 
 ### matches — finds out if the pattern matches the whole text; returns a Boolean value
 
-The `matches` function indicates whether the regular expression matches the entire text string. 
+The `matches` function indicates if the pattern matches the whole text string. Returns a Boolean value.
 
 Define if the pattern matches the entire text.
 
