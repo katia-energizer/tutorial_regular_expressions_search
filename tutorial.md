@@ -8,28 +8,26 @@ date: 2021-02-03
 showAuthorInfo: false
 ---
 
-This tutorial demonstrates how to write patterns with regular expressions and use these patterns for searching in a text.
-
-You will create a regular expression and write search functions using this regular expression.
+You will create search patterns with a regular expression and write search functions using these patterns.
 
 This tutorial consists of two parts:
 
-* [Create a regular expression](#Create-a-regular-expression)
-* [Search with a regular expression](#Search-with-a-regular-expression)
+* [Create a pattern with a regular expression](#Create-a-pattern-with-a-regular-expression)
+* [Search with a pattern](#Search-with-a-pattern)
 
    In the second part, you will learn about five search functions:
 
    | **Function** | **Description**  |
    |---------------|------------------|
-   | [`containsMatchIn`](#containsMatchIn--finds-out-does-the-text-contain-any-matches)| Finds out does the text contain any matches. |
+   | [`containsMatchIn`](#containsMatchIn--finds-out-if-the-text-contains-any-matches)| Finds out if the text contains any matches. |
    | [`find`](#find--finds-the-first-match)                                            | Finds the first match. |
    | [`findAll`](#findAll--finds-all-matches)                                          | Finds all matches. |
-   | [`matchEntire`](#matchentire--finds-out-does-the-regular-expression-match-the-whole-text-returns-a-match-parameter) | Finds out does the regular expression match the whole text. Returns a match parameter. |
-   | [`matches`](#matches--finds-out-does-the-regular-expression-match-the-whole-text-returns-a-Booolean-value) | Finds out does the regular expression match the whole text. Returns a Booolean value. |
+   | [`matchEntire`](#matchentire--finds-out-if-the-pattern-matches-the-whole-text-returns-a-match-parameter) | Finds out if the pattern matches the whole text. Returns a match parameter. |
+   | [`matches`](#matches--finds-out-if-the-pattern-matches-the-whole-text-returns-a-Booolean-value) | Finds out if the pattern matches the whole text. Returns a Booolean value. |
 
 To get started, you need to create an application [using Intellij IDEA](https://kotlinlang.org/docs/tutorials/jvm-get-started.html) or another IDE with the Kotlin Programming Language support. 
 
-## Create a regular expression
+## Create a search pattern with a regular expression
 
 There may be times when you need to use [regular expressions](https://www.regular-expressions.info/quickstart.html).
 
@@ -92,18 +90,18 @@ In this example, we added the `Regex` type to the value. Alternatively, you can 
 > In this tutorial, we will search for numbers between 100 and 999. You can also create a search pattern of your choice. In this case, you will need to have a relevant text for your pattern, but you still can refer to the described functions.
 >
 
-## Search with a regular expression
+## Search with a pattern
 
 In this part, you will learn how to:
 
-* Find out does the text contain any matches of your regular expression ([`containsMatchIn`](#containsMatchIn--finds-out-does-the-text-contain-any-matches))
-* Find the first regular expression match in the text ([`find`](#find--finds-the-first-match))
-* Find all regular expression matches in the text ([`findAll`](#findAll--finds-all-matches))
-* Find out does your regular expression match the whole text; depending on the applied function, you can get a certain match parameter ([`matchEntire`](#matchentire--finds-out-does-the-regular-expression-match-the-whole-text-returns-a-match-parameter)) or a Boolean value ([`matches`](#matches--finds-out-does-the-regular-expression-match-the-whole-text-returns-a-booolean-value)).
+* Find out if the text contains any matches of your pattern ([`containsMatchIn`](#containsMatchIn--finds-out-if-the-text-contains-any-matches))
+* Find the first pattern match in the text ([`find`](#find--finds-the-first-match))
+* Find all pattern matches in the text ([`findAll`](#findAll--finds-all-matches))
+* Find out if your pattern matches the whole text; depending on the applied function, you can get a match parameter ([`matchEntire`](#matchentire--finds-out-if-the-pattern-matches-the-whole-text-returns-a-match-parameter)) or a Boolean value ([`matches`](#matches--finds-out-if-the-pattern-matches-the-whole-text-returns-a-booolean-value)).
 
 You can find the full list of functions in the [`Regex` type reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex/#kotlin.text.Regex).
 
-### containsMatchIn — finds out does the text contain any matches 
+### containsMatchIn — finds out if the text contains any matches 
 
 The `containsMatchIn` function attempts to can find a match of the regular expression in your text.
 
@@ -263,7 +261,7 @@ The pattern has two matches in the text: `123` and `808`, so the `findAll` funct
 
 For information about function parameters and exceptions, refer to the [`findAll` function reference](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex/find-all.html).
 
-### matchEntire — finds out does the regular expression match the whole text; returns a match parameter
+### matchEntire — finds out if the pattern matches the whole text; returns a match parameter
 
 The `matchEntire` function attempts to match the regular expression against the entire text string. 
 
@@ -313,7 +311,7 @@ Define if the pattern matches the entire text.
 
 The pattern does not match the text, so the function returns `null`.
 
-### matches — finds out does the regular expression match the whole text; returns a Booolean value
+### matches — finds out if the pattern matches the whole text; returns a Booolean value
 
 The `matches` function indicates whether the regular expression matches the entire text string. 
 
