@@ -65,7 +65,7 @@ You can combine literal and special characters to create complex patterns. For t
    val pattern = "\b[1-9][0-9]{2}\b"
    ```
 
-With this regular expression, you can search for numbers between 100 and 999.
+   With this regular expression, you can search for numbers between 100 and 999.
 
 3. Add an extra backslash before each `\b` part of the regular expression. 
 
